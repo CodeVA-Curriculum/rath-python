@@ -1,0 +1,17 @@
+// Navbar
+$navbar-height: 4rem;
+$navbar-item-img-max-height: 3.5rem;
+
+// Typography variables
+//TODO: Figure out how to host local fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+$family-sans-serif: "Raleway";
+$weight-bold: 900;
+$jumbo: 128pt;
+
+// Colors
+$primary: #64B4E4;
+$grey-dark: #323F47;
+$text: $grey-dark;
+$text-strong: $grey-dark;
+$text-invert: whitesmoke;

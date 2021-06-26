@@ -3,6 +3,11 @@
 // restore default behaviour
 $body-overflow-y: auto;
 
+
+
+@import "./styles.scss"; // Custom stylesheet
+
+
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all";
 @import "../node_modules/bulma/sass/base/_all";
@@ -12,3 +17,5 @@ $body-overflow-y: auto;
 @import "../node_modules/bulma/sass/grid/_all";
 @import "../node_modules/bulma/sass/helpers/_all";
 @import "../node_modules/bulma/sass/layout/_all";
+
+
