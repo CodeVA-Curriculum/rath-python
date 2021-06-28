@@ -5,7 +5,7 @@ $body-overflow-y: auto;
 
 
 
-@import "./styles.scss"; // Custom stylesheet
+@import './src/lib/styles/variables.scss';
 
 
 // Import only what you need from Bulma
@@ -18,4 +18,7 @@ $body-overflow-y: auto;
 @import "../node_modules/bulma/sass/helpers/_all";
 @import "../node_modules/bulma/sass/layout/_all";
 
+.blog {
+    @import './src/lib/styles/blog.scss';
+}
 

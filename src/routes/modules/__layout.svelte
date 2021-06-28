@@ -1,7 +1,9 @@
-<script>
-    import View from "$lib/components/View.svelte";
-</script>
+<div class='columns'>
+    <div class='blog column is-6 is-offset-3 content'>
+        <slot></slot>
+    </div>
+</div>
 
-<View>
-    <slot />
-</View>
+<style>
+    
+</style>

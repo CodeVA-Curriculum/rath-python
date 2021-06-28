@@ -23,25 +23,25 @@ Below, you'll find some contextualizing information about these modules and our 
     <a href='/modules/module-1' ><button class='button is-primary'>Go to Module 1<Fa class='ml-3' icon={faChevronRight} /></button></a>
 </div>
 
-----
-
 # What Is an Interactive Narrative?
 
-An *interactive narrative* is a story that invites the reader to participate in its outcome. You may have read a "choose-your-own-adventure" book in the past, where at critical moments you, as the reader, chose to follow one path or another affected by the characters' choices. Here are some examples of different interactive narratives across media:
+An *interactive narrative* is a story that invites the reader to participate in its outcome. You may have read a "choose-your-own-adventure" book in the past, where at critical moments you, as the reader, chose to follow one path or another affected by the characters' choices.
 
 <VideoModule title="Bury Me, My Love" video="https://www.youtube.com/embed/Xbm3B__eQoI">
-    <p><i>Bury Me, My Love</i> is an interactive fiction where you participate in the refugee narrative of a couple fleeing the Syrian civil war. While the story itself is fictional, it is profoundly grounded in the lived histories of real people experiencing these events. The game's story engages with both the personal narratives of its characters, but also with the social and political realities which shape those narratives.</p>
+    <p><i>Bury Me, My Love</i> is an interactive fiction where you participate in the refugee narrative of a couple fleeing the Syrian civil war. While the story itself is fictional, it is profoundly grounded in the lived histories of real people experiencing these events, as well as the political realities which shape those narratives.</p>
     <div class='has-text-right'>
         <a href="https://burymemylove.arte.tv/"><button class='button is-light'>Learn More</button></a>
     </div>
 </VideoModule>
 
-<VideoModule title="Bandersnatch" video="https://www.youtube.com/embed/7wnRi3Sclm8">
+Interactive narratives engage readers' agency, and explore how people's choices lead to different outcomes. Writing these kinds of stories has a long history, dating back to the beginning of the consumer computing age. Some of the earliest video games took the form of interactive narratives (specifically, interactive fiction). This genre has continued to be a source of inspiration to many different authors, and independent authors publish hundreds of new interactive narratives every year using tools like [Twine](https://twinery.org/). Other expressive forms, like visual novels and point-and-click adventures, trace their history back to interactive fiction.
+
+<!-- <VideoModule title="Bandersnatch" video="https://www.youtube.com/embed/7wnRi3Sclm8">
     <p><i>Bandersnatch</i> (2018) was a popular episode of the Netflix show <i>Black Mirror</i>, in which the viewer is prompted to guide the main character through a series of decisions, eventually leading to one of many possible endings. While this example doesn't necessarily lend itself to the study of history or the human experience, it is a good example of a contemporary interactive narrative artifact.</p>
     <div class='has-text-right'>
         <a href="https://www.vulture.com/2018/12/black-mirror-bandersnatch-all-endings-explained.html"><button class='button is-light'>Spoilers</button></a>
     </div>
-</VideoModule>
+</VideoModule> -->
 
 <!-- <VideoModule title="IF Tech Foundation" video="#">
     <p>The <i>Interactive Fiction Technology Foundation</i> is an organization devoted to collecting and archiving interactive narratives written by all sorts of people on many different topics. They run the <a href="https://www.ifarchive.org/">IF Archive</a>, and host a story writing competition called <a href="https://ifcomp.org/">IFComp</a> each year. If you're curious about what amateur interactive fiction looks like, their archive is definitely worth browsing.</p>
@@ -50,16 +50,33 @@ An *interactive narrative* is a story that invites the reader to participate in 
     </div>
 </VideoModule> -->
 
-----
-
 # Why Coding, and Why Python?
 
-Lorum ipsum
+While many people have created pre-digital interactive narratives, the art form is, at least right now, a primarily digital one. By creating interactive stories with code, authors can express nonlinear, branching narratives with many possible endings and many possible paths for the reader to experience.
+
+We chose to adopt **Python** has the central tool for these modules for a couple of related reasons:
+
+* **Transferability:** Python is a general-purpose coding language, meaning that the skills you learn while you create your interactive narratives transfer to other creative paradigms, like data analysis and language processing
+* **Ubiquity:** Python has been around long enough that it has built up a large community of users, resources, and platforms. If you want to learn more about coding, you won't have any trouble finding more Python projects to work on
+* **Flexibility:** There are dozens of tools out there for writing code using Python, from web-based editors to fully offline development environments. No matter who you are and what resources you have access to, there's a good chance you can write and test Python on your computer
+
+Because this is an introductory course, our interactive narratives will have sort of a "retro" vibe; reader will interact with a program called a **console** (also known as a "terminal" or "command prompt") to read the story and make choices. You can play an interactive narrative made with Python below, if you'd like.
+
+[insert Python exemplar]
+
+# Let's Get Started!
+
+In the following modules, we will guide you through learning to create interactive narratives with Python. The path is broken up into the following stages:
+
+* Output, Input, & Variables
+* Conditional Statements
+* Functions
+* Designing Interactive Narratives
+
+Each stage contains some text and examples, as well as a project that you can complete to help hone your skills. The best way to learn how to code is to jump in! Remember that making mistakes is part of the learning process; approach these modules with a sense of experimentation and discovery, and you'll be very successful.
+
+<div class='container has-text-right my-5'>
+    <a href='/modules/module-1' ><button class='button is-primary'>Go to Module 1<Fa class='ml-3' icon={faChevronRight} /></button></a>
+</div>
 
 ----
-
-<style>
-    hr {
-        margin-bottom: 6rem;
-    }
-</style>

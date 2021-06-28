@@ -3,7 +3,7 @@
     export let title = "An embedded YouTube video at URL" + video;
 </script>
 
-<div class='card py-4 px-6 video-module my-5'>
+<div class='card py-4 px-6 video-module'>
     <div class='card-body pt-4'>
         <div class='columns'>
             <div class='column pr-5 mr-5 content text'>
@@ -13,7 +13,7 @@
             </div>
             <div class='column'>
                 <div class="player">
-                    <iframe title={title} width="100%" height="100%" src={video} frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe class='mb-5' title={title} width="100%" height="100%" src={video} frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>  
         </div>
@@ -21,13 +21,13 @@
 </div>
 
 <style lang='scss'>
-    @import "../../styles.scss";
+    @import '../styles/variables.scss';
     .player {
         border-radius: 10px;
         overflow: hidden;
         z-index: 1;
         /* background-color: pink; */
-        height: 320px;
+        height: 300px;
     }
     .video-module {
         background-color: $grey-dark;
@@ -39,5 +39,6 @@
         h3 {
             color: whitesmoke;
         }
+        margin: 2rem;
     }
 </style>
