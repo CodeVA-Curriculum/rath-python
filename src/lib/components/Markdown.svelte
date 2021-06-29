@@ -4,7 +4,7 @@
     let e;
 </script>
 
-<span bind:this={e}>
+<span bind:this={e} style='display: none;'>
     <slot />
 </span>
 

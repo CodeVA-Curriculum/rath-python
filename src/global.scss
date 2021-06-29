@@ -4,7 +4,6 @@
 $body-overflow-y: auto;
 
 
-
 @import './src/lib/styles/variables.scss';
 
 
@@ -20,5 +19,16 @@ $body-overflow-y: auto;
 
 .blog {
     @import './src/lib/styles/blog.scss';
+    code {
+        @import './src/lib/styles/code.scss';
+        
+    }
+    pre {
+        border-radius: 10px;
+        background: #2b2b2b;
+    }
 }
+
+
+
 

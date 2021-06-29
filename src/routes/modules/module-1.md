@@ -1,6 +1,5 @@
 <script>
     import Callout from "$lib/components/Callout.svelte";
-    import Markdown from '$lib/components/Markdown.svelte.md';
 </script>
 
 # Module 1: Speaking, Listening, & Remembering
@@ -35,8 +34,53 @@ You'll probably experience syntax errors a lot when you're learning how to code.
 
 # Guided Inquiry
 
-Throughout these modules, you'll see elements like the one below. These are embedded [Repl.it]() projects, which will allow you to run and edit code on this webpage. When you reach the **[Project]()** below, you'll create a [Repl.it]() account and 
+Throughout these modules, you'll read code segments demonstrating different Python commands and patterns. As you make your way through the module, we *highly* encourage you to try writing code using those commands and patterns. Talking about code can sometimes be pretty abstract; it will be helpful to pair this information with some experience. First, you need somewhere to write and compile your code!
 
+Follow either set of instructions below to get set up with Python on your computer. You can either use **[Repl.it]()** (which runs in your web browser and requires a pretty good internet connection) or you can set up Python on your computer (which requires no internet, but does involve installing unfamiliar software and may take some time). Click on one of the links below to see instructions for how to get set up with either set of tools:
+
+* How to Use Repl.it (Recommended)
+* How to Install and Use Python
+
+## Speak
+
+As we discussed above, all software has some form of input and output. The first, and easiest, form of output to learn in Python is **printing** to something called the **console**. In [Repl.it](), any messages your code says to `print()` will show up in the box to the right of where you write your code. To print to the console, we must use an aptly-named Python function (or command) called `print()`. The syntax for `print()` is as follows:
+
+```python
+print("A message to show to the user")
+```
+
+You can add as many of these as you want to! Remember--these commands are the *script* your computer will follow when it tells its story. Whenever you want the computer to "speak" to the user, this is the command you will use. Your programs can get pretty verbose...
+
+```python
+print("Hello!")
+print("This is a Python program")
+print("All it does it output messages")
+print("So it might as well output a lot of them.")
+```
+
+Your program can include as many of these commands as you want! There are a couple of details to take note of:
+
+* `print("hello")` and `print('hello')` do the same thing; single and double quotes aren't different in Python. Just make sure you use the same kind of quotation mark on either side of your message!
+* The name of the function you are using is `print()`, and the text inside the quotation marks is a **string**
+* For now, you should only print **strings**; this means that you should always put matching quotation marks around the text you want the computer to `print()`
+
+<Callout title="Try It!">
+
+Try copying the code above into your code editor. Run the code, and observe the **output**. Then, try experimenting with the code to address the prompts below:
+
+* Can you change the code to create a syntax error on purpose? Try finding three things in the code that are *unsafe* to change
+* Now try the opposite--what parts of the code are safe to change?
+* Try adding another line of code to the program. Follow the same **pattern** that you've already included in your program; just add another line after an existing one
+
+</Callout>
+
+## Listen
+
+Code is deterministic -- if the code is the same, the behavior is the same
+
+Experimentation Strategies
+
+## Remember
 
 # Prompt
 
