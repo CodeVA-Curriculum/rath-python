@@ -41,9 +41,7 @@
 			</div>
 		</div>
 	</nav>
-	<div class='section'>
-		<slot />
-	</div>
+	<slot />
 </main>
 
 <style lang='scss' global>

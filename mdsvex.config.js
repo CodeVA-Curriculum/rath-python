@@ -4,6 +4,9 @@ const config = {
   "smartypants": {
     "dashes": "oldschool"
   },
+  layout: {
+    module: './src/lib/components/ModuleHeader.svelte'
+  },
 
   "remarkPlugins": [],
   "rehypePlugins": []

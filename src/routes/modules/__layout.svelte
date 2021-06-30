@@ -1,9 +1,8 @@
-<div class='columns'>
-    <div class='blog column is-6 is-offset-3 content'>
-        <slot></slot>
-    </div>
-</div>
+<script>
+    import Fa from 'svelte-fa';
+    import {faArrowLeft, faArrowRight, faHome} from '@fortawesome/free-solid-svg-icons';
+</script>
 
-<style>
-    
-</style>
+<div class='module-layout'>
+    <slot/>
+</div>
