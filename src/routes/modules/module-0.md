@@ -12,6 +12,12 @@ layout: module
     import {base} from '$app/paths';
 </script>
 
+<style>
+    iframe {
+        border-radius: 20px;
+    }
+</style>
+
 # Welcome!
 
 Each module in this course follows the same format:
@@ -66,9 +72,9 @@ We chose to adopt **Python** has the central tool for these modules for a couple
 * **Ubiquity:** Python has been around long enough that it has built up a large community of users, resources, and platforms. If you want to learn more about coding, you won't have any trouble finding more Python projects to work on
 * **Flexibility:** There are dozens of tools out there for writing code using Python, from web-based editors to fully offline development environments. No matter who you are and what resources you have access to, there's a good chance you can write and test Python on your computer
 
-Because this is an introductory course, our interactive narratives will have sort of a "retro" vibe; reader will interact with a program called a **console** (also known as a "terminal" or "command prompt") to read the story and make choices. You can play an interactive narrative made with Python below, if you'd like.
+Because this is an introductory course, our interactive narratives will have sort of a "retro" vibe; reader will interact with a program called a **console** (also known as a "terminal" or "command prompt") to read the story and make choices. You can play an interactive narrative made with Python below, if you'd like; just click the green **Play** button in the bottom right-hand corner of the black **console** area.
 
-[insert Python exemplar]
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@JonStapleton1/zork-py?embed=true&outputonly=1"></iframe>
 
 # Let's Get Started!
 

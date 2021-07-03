@@ -21,6 +21,7 @@
 					<Fa icon={faPlus} size="1.5x" />
 				</div>
 				<img alt="The Python logo--two stylized snakes forming a 'plus' sign" src={pyLogo} height="28">
+				<h1 class='has-text-weight-bold is-size-5 ml-5'>Designing Interactive Narratives with Python</h1>
 			</a>
 	  
 			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -62,7 +63,7 @@
 <footer class="footer">
 	<div class="content has-text-centered">
 		<p>
-		These modules were written by <a href="https://jonstapleton.github.io/"><strong>Jon Stapleton</strong></a> on behalf of <strong>CodeVA</strong>. The source code is licensed
+		These modules were written by <a href="https://jonstapleton.github.io/"><strong>Jon Stapleton</strong></a> on behalf of <a href="https://www.codevirginia.org/"><strong>CodeVA</strong></a>. The source code is licensed
 		<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. The website content
 		is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
 		</p>
