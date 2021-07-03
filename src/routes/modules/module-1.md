@@ -72,6 +72,10 @@ Your program can include as many of these commands as you want! There are a coup
 
 <VideoModule title="Print Video Tutorial" video="#">
     This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
+    <div class='buttons has-addons pt-4'>
+        <a href='#' class='button'>Starter Code</a>
+        <a href="#" class='button'>Ending Code</a>
+    </div>
 </VideoModule>
 
 <Callout title="Try It!">
@@ -127,6 +131,10 @@ After adding `input()` to your programs, you can write programs that tell the co
 
 <VideoModule title="Input Video Tutorial" video="#">
     This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
+    <div class='buttons has-addons pt-4'>
+        <a href='#' class='button'>Starter Code</a>
+        <a href="#" class='button'>Ending Code</a>
+    </div>
 </VideoModule>
 
 <Callout title="Try It!">
@@ -153,7 +161,7 @@ Follow the instructions below to complete the hands-on component of this module:
 
 </Callout>
 
-<div class='card'>
+<div class='card my-5'>
     <div class='card-content'>
         <h3>OpenClass AI Practice Questions</h3>
         <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master `print()` and `input()` functions in Python.</p>
@@ -162,5 +170,3 @@ Follow the instructions below to complete the hands-on component of this module:
         <a href="#" class="card-footer-item">View Practice Questions</a>
     </div>
 </div>
-
-----
