@@ -5,7 +5,7 @@
     import Markdown from '$lib/components/Markdown.svelte';
 </script>
 
-<div class='card py-4 px-6 m-5 video-module'>
+<div class='card py-4 px-6 my-5 video-module'>
     <div class='card-body py-4'>
         <div class='columns'>
             <div class='column pr-5 mr-5 content text'>

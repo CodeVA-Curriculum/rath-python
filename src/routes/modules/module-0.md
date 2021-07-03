@@ -1,7 +1,6 @@
 ---
 title: 0. Course Overview
 description: These modules are designed to help you get familiar with Python while exploring *interactive narrative design*, where we put together stories that leave space for the reader to explore, make choices, and engage with the events of the story in a participatory way.
-previous: "/"
 next: module-1
 layout: module
 ---

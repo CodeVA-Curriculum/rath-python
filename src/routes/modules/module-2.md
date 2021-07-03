@@ -1,3 +1,11 @@
+---
+title: 2. Remember
+description: Lorum ipsum
+previous: module-1
+next: module-3
+layout: module
+---
+
 Python code works based on *rules*. If we know how the rules work, we can experiment and learn more about how to write Python programs through *inductive reasoning*. Here are some rules that will *always* be true with Python code:
 
 * **Python code is deterministic.** If the code is the same, the behavior produced by the computer will be the same.

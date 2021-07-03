@@ -1,8 +1,7 @@
 ---
-title: 1. Speaking, Listening, & Remembering
-description: This module introduces three fundamental tenets of computing--input, output, and storage. Every computing device or piece of software that you use can do these three things, and so our interactive narratives will need to as well. In practice, we will use these three things to create software that can **speak**, **listen**, and **remember** past exchanges with the reader/user.
+title: 1. Speaking & Listening
+description: This module introduces three fundamental tenets of computing--input, output, and storage. Every computing device or piece of software that you use can do these three things, and so our interactive narratives will need to as well. In practice, we will use these three things to create software that can speak with and listen to the reader/user.
 previous: module-0
-next: module-2
 layout: module
 ---
 
@@ -39,7 +38,7 @@ The computer will follow these instructions, producing complex behavior based on
 
 You'll probably experience syntax errors a lot when you're learning how to code. These moments of misunderstanding between you and the compiler can be positive and productive as you learn to communicate with one another, as long as you don't let it's terseness discourage you!
 
-# Guided Inquiry
+## Getting Started
 
 Throughout these modules, you'll read code segments demonstrating different Python commands and patterns. We *highly* encourage you to try writing code using those commands and patterns. Talking about code can sometimes be pretty abstract; it will be helpful to pair this information with some experience. First, you need somewhere to write and compile your code!
 
@@ -48,7 +47,7 @@ Follow either set of instructions below to get set up with Python on your comput
 * How to Use Repl.it (Recommended)
 * How to Install and Use Python
 
-## Speak
+# Speak
 
 As we discussed above, all software has some form of input and output. The first, and easiest, form of output to learn in Python is **printing** to something called the **console**. In [Repl.it](), any messages your code says to `print()` will show up in the box to the right of where you write your code. To print to the console, we must use an aptly-named Python function (or command) called `print()`. The syntax for `print()` is as follows:
 
@@ -71,8 +70,6 @@ Your program can include as many of these commands as you want! There are a coup
 * The name of the function you are using is `print()`, and the text inside the quotation marks is a **string**
 * For now, you should only print **strings**; this means that you should always put matching quotation marks around the text you want the computer to `print()`
 
-
-
 <VideoModule title="Speak Video Tutorial" video="#">
     This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
 </VideoModule>
@@ -86,7 +83,7 @@ Try copying the code above into your code editor. Run the code, and observe the 
 
 </Callout>
 
-## Listen
+# Listen
 
 The programs you read about above don't do very much; they just show information to the user via the console. Outputting text is going to be a vital component of our interactive narratives, but we also need the computer to get *input* from the user. Right now our program only instructs the computer to speak; we need to instruct the computer to listen, as well.
 
@@ -126,11 +123,11 @@ print("See you tomorrow!")
 
 After the last line of your "script", the program will end and you'll have to press the "play" button again to interact with your Python program.
 
-<Callout title="Try It!">
+After adding `input()` to your programs, you can write programs that tell the computer to *interact* with the reader of your interactive narrative. Right now, these programs aren't very "smart"; the story doesn't change based on what the user says during those interactions. We will cover that stuff in the next two modules. For now, it's okay to just practice writing new code on your own, and to begin thinking about what sorts of choices users might make in a story that you write.
 
-</Callout>
-
-## Remember
+<VideoModule title="Listen Video Tutorial" video="#">
+    This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
+</VideoModule>
 
 <Callout title="Try It!">
 

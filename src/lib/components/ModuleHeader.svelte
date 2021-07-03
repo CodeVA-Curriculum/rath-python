@@ -1,5 +1,17 @@
 <script>
-    export let title, description, previous, next;
+    export let title, description
+    export let previous;
+    export let next;
+    let preEnable = false;
+    let nextEnable = false;
+
+    $: if(next) {
+        nextEnable = true;
+    }
+    $: if(previous) {
+        preEnable = true;
+    }
+    
     import Fa from 'svelte-fa';
     import {faArrowLeft, faArrowRight, faHome} from '@fortawesome/free-solid-svg-icons'
 </script>
@@ -10,18 +22,22 @@
             <h1 class='title'>{title}</h1>
             <p class='block'>{description}</p>
             <div class='buttons has-addons'>
+                {#if preEnable}
                 <a class='button nav' href={previous}>
                     <Fa icon={faArrowLeft} />
                     <span class='button-text'>Previous</span>
                 </a>
-                <a class='button' href="modules">
+                {/if}
+                <a class='button nav' href="../modules">
                     <Fa icon={faHome} />
                     <span class='button-text'>Index</span>
                 </a>
-                <a class='button' href={next} >
+                {#if nextEnable}
+                <a class='button nav' href={next} >
                     <span class='button-text'>Next</span>
                     <Fa icon={faArrowRight} />
                 </a>
+                {/if}
             </div>
         </div>
     </div>
