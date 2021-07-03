@@ -9,7 +9,7 @@
 
 
 
-<main>
+<main class='is-flex is-flex-direction-column'>
 	<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a class="navbar-item" href='.'>
@@ -42,8 +42,23 @@
 		</div>
 	</nav>
 	<slot />
+<footer class="footer">
+	<div class="content has-text-centered">
+		<p>
+		These modules were written by <strong>Jon Stapleton</strong> on behalf of <strong>CodeVA</strong>. The source code is licensed
+		<a href="http://opensource.org/licenses/mit-license.php">GPLv3</a>. The website content
+		is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+		</p>
+	</div>
+</footer>
 </main>
 
 <style lang='scss' global>
 	@import "../global.scss";
+	main {
+		min-height: 100vh;
+	}
+	main > footer {
+		margin-top: auto;
+	}
 </style>

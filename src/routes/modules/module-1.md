@@ -140,3 +140,5 @@ Lorum ipsum
 # Catalyzing Questions
 
 * Think of software that you use often. What sorts of inputs does it ask for from you, the user? What sorts of outputs does it produce? Does it store any information in the short or long term?
+
+----
