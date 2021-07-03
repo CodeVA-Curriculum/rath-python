@@ -70,7 +70,7 @@ Your program can include as many of these commands as you want! There are a coup
 * The name of the function you are using is `print()`, and the text inside the quotation marks is a **string**
 * For now, you should only print **strings**; this means that you should always put matching quotation marks around the text you want the computer to `print()`
 
-<VideoModule title="Speak Video Tutorial" video="#">
+<VideoModule title="Print Video Tutorial" video="#">
     This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
 </VideoModule>
 
@@ -125,20 +125,42 @@ After the last line of your "script", the program will end and you'll have to pr
 
 After adding `input()` to your programs, you can write programs that tell the computer to *interact* with the reader of your interactive narrative. Right now, these programs aren't very "smart"; the story doesn't change based on what the user says during those interactions. We will cover that stuff in the next two modules. For now, it's okay to just practice writing new code on your own, and to begin thinking about what sorts of choices users might make in a story that you write.
 
-<VideoModule title="Listen Video Tutorial" video="#">
+<VideoModule title="Input Video Tutorial" video="#">
     This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
 </VideoModule>
 
 <Callout title="Try It!">
+Try copying one of the code examples above into your code editor. Run the code, and observe the **output**. Then, try experimenting with the code to address the prompts below:
+
+* Try *starting* your program with an `input()` command. What are some possible problems with this pattern? Are there situations where a coder would *want* to start their program with `input()`?
+* Now try *ending* your program with an `input()` command. Is this a good or confusing design decision?
 
 </Callout>
 
-# Prompt
+# Apply Your Skills
 
-Lorum ipsum
+When coders only know how to use a couple of commands, their creative space is pretty small. Using only `print()` and `input()` commands is pretty limiting! Don't worry--we will add a lot more tools to your toolbox in the (very) near future. For now, check out the prompt below, which is designed to help you practice writing Python programs that include `print()` and `input()` commands:
 
-# Catalyzing Questions
+<Callout title="Print & Input Mini-Project" footerLink="#">
+[StoryCorps](https://storycorps.org/) is an organization that works to collect stories from people around the world. Many of the stories collected by StoryCorps over the years are now archived in the Library of Congress, helping to preserve narratives about life in America told by people from many different walks of life. Part of StoryCorp's work involves helping people who may not have interview experience conduct interviews with friends and family. To help with this process, they have curated a list of [great questions](https://storycorps.org/participate/great-questions/).
 
-* Think of software that you use often. What sorts of inputs does it ask for from you, the user? What sorts of outputs does it produce? Does it store any information in the short or long term?
+Follow the instructions below to complete the hands-on component of this module:
+
+1. Think of someone you could interview for StoryCorps. They could be a family member, a friends, a colleauge, or a student.
+1. Go to https://storycorps.org/participate/great-questions/
+2. Find a list of compelling questions that you would like to ask your hypothetical interview subject
+4. Write an interactive Python program that asks the user the questions you've selected, and pauses to allow them to answer by typing into the console.
+
+</Callout>
+
+<div class='card'>
+    <div class='card-content'>
+        <h3>OpenClass AI Practice Questions</h3>
+        <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master `print()` and `input()` functions in Python.</p>
+    </div>
+    <div class='card-footer'>
+        <a href="#" class="card-footer-item">View Practice Questions</a>
+    </div>
+</div>
 
 ----
