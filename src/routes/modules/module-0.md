@@ -9,6 +9,7 @@ layout: module
     import VideoModule from '$lib/components/VideoModule.svelte';
     import Fa from 'svelte-fa'
     import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
+    import {base} from '$app/paths';
 </script>
 
 # Welcome!
@@ -25,7 +26,7 @@ Each module is intended to support between 30 and 60 minutes of focused, sustain
 Below, you'll find some contextualizing information about these modules and our rationale for highlighting the tools and techniques we did. Feel free to take a look, or continue to **Module 1** by clicking the button below:
 
 <div class='container has-text-right my-5'>
-    <a href='/modules/module-1' ><button class='button is-primary'>Go to Module 1<Fa class='ml-3' icon={faChevronRight} /></button></a>
+    <a href="{base}/modules/module-1" ><button class='button is-primary'>Go to Module 1<Fa class='ml-3' icon={faChevronRight} /></button></a>
 </div>
 
 # What Is an Interactive Narrative?
@@ -81,7 +82,7 @@ In the following modules, we will guide you through learning to create interacti
 Each stage contains some text and examples, as well as a project that you can complete to help hone your skills. The best way to learn how to code is to jump in! Remember that making mistakes is part of the learning process; approach these modules with a sense of experimentation and discovery, and you'll be very successful.
 
 <div class='container has-text-right my-5'>
-    <a href='/modules/module-1' ><button class='button is-primary'>Go to Module 1<Fa class='ml-3' icon={faChevronRight} /></button></a>
+    <a href='{base}/modules/module-1' ><button class='button is-primary'>Go to Module 1<Fa class='ml-3' icon={faChevronRight} /></button></a>
 </div>
 
 ----

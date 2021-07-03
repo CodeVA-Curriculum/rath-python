@@ -46,7 +46,6 @@
 </div>
 
 <style lang='scss'>
-    @import "../../lib/styles/variables.scss";
     .big {
         font-size: 2rem;
         font-weight: bolder;

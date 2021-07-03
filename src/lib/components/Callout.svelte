@@ -2,6 +2,7 @@
     import Markdown from '$lib/components/Markdown.svelte';
     export let title="No Title!";
     export let footerLink;
+    import {base} from '$app/paths';
 </script>
 
 <div class='callout card my-5'>
@@ -13,13 +14,13 @@
     </div>
     {#if footerLink}
     <div class='card-footer linker'>
-        <a class='card-footer-item' href={footerLink}>View Starter Code</a>
+        <a class='card-footer-item' href="{base}/{footerLink}">View Starter Code</a>
     </div>
     {/if}
 </div>
 
 <style lang='scss'>
-    @import '../styles/variables.scss';
+    @import "../styles/variables.scss";
     .callout {
         background-color: whitesmoke;
     }

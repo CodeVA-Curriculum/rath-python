@@ -1,5 +1,5 @@
 <script>
-	import codeLogo from '$lib/assets/CodeVA Logo.png';
+	//import codeLogo from '$lib/assets/CodeVA Logo.png';
 </script>
 
 <section class='section is-medium has-text-centered'>

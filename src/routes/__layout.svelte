@@ -1,13 +1,13 @@
 <script>
 	// import "../global.scss";
 
-	import logoSrc from '$lib/assets/CodeVA Logo.png';
-	import pyLogo from '$lib/assets/Python Logo.png';
 	import {faPlus} from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
 
+	import logoSrc from '$lib/assets/CodeVALogo.png';
+	import pyLogo from '$lib/assets/PythonLogo.png';
+
 	import {base} from "$app/paths";
-	$: console.log(base);
 </script>
 
 
@@ -15,12 +15,12 @@
 <main class='is-flex is-flex-direction-column'>
 	<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<a class="navbar-item" href="/">
-				<img src={logoSrc} alt="A logo for Code Virginia--a large blue circle with the text 'CodeVA' in the center" height="28">
+			<a class="navbar-item" href="{base}/">
+				<img alt="A logo for Code Virginia--a large blue circle with the text 'CodeVA' in the center" src={logoSrc} height="28">
 				<div class='px-2'>
 					<Fa icon={faPlus} size="1.5x" />
 				</div>
-				<img src={pyLogo} alt="The Python logo--two stylized snakes forming a 'plus' sign" height="28">
+				<img alt="The Python logo--two stylized snakes forming a 'plus' sign" src={pyLogo} height="28">
 			</a>
 	  
 			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -35,7 +35,7 @@
 				
 		 	</div>
 			<div class="navbar-end links">
-				<a href='/' class="navbar-item">
+				<a href='{base}/' class="navbar-item">
 					Home
 				</a>
 

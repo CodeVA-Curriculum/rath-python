@@ -8,10 +8,10 @@
     // import merge from 'deepmerge';
 
     // Import the highlighter, for example, say I want prism with javascript support
-    import { highlight, languages } from 'prismjs/components/prism-core';
-    import 'prismjs/components/prism-clike';
-    import 'prismjs/components/prism-javascript';
-    import 'prismjs/components/prism-python'
+    import { highlight, languages } from 'prismjs/components/prism-core.js';
+    import 'prismjs/components/prism-clike.js';
+    import 'prismjs/components/prism-javascript.js';
+    import 'prismjs/components/prism-python.js'
 
     // Preserve className attributes when sanitizing the HTML
     // This is necessary for syntax highlighting

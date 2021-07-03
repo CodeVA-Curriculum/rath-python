@@ -14,6 +14,7 @@
     
     import Fa from 'svelte-fa';
     import {faArrowLeft, faArrowRight, faHome} from '@fortawesome/free-solid-svg-icons'
+    import {base} from '$app/paths';
 </script>
 
 <div class='hero is-primary banner'>
@@ -23,17 +24,17 @@
             <p class='block'>{description}</p>
             <div class='buttons has-addons'>
                 {#if preEnable}
-                <a class='button nav' href={previous}>
+                <a class='button nav' href="{base}/modules/{previous}">
                     <Fa icon={faArrowLeft} />
                     <span class='button-text'>Previous</span>
                 </a>
                 {/if}
-                <a class='button nav' href="../modules">
+                <a class='button nav' href="{base}/modules">
                     <Fa icon={faHome} />
                     <span class='button-text'>Index</span>
                 </a>
                 {#if nextEnable}
-                <a class='button nav' href={next} >
+                <a class='button nav' href="{base}/modules/{next}" >
                     <span class='button-text'>Next</span>
                     <Fa icon={faArrowRight} />
                 </a>
