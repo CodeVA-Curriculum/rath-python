@@ -1,11 +1,12 @@
 <script>
 	//import codeLogo from '$lib/assets/CodeVA Logo.png';
+	import {base} from '$app/paths';
 </script>
 
 <section class='section is-medium has-text-centered'>
 		<!-- <img class='image' style='width: 256px;' src={codeLogo} /> -->
 		<h1 class='title'>Designing Interactive Narratives with Python</h1>
-		<a href="/modules">
+		<a href="{base}/modules">
 			<button class='my-4 button is-primary is-large'>Get Started</button>
 		</a>
 </section>

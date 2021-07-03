@@ -10,7 +10,14 @@ layout: module
     import CodeAndConsole from '$lib/components/CodeAndConsole.svelte';
     import Markdown from '$lib/components/Markdown.svelte';
     import VideoModule from '$lib/components/VideoModule.svelte';
+    import {base} from '$app/paths';
 </script>
+
+<style>
+    .err {
+        color: whitesmoke;
+    }
+</style>
 
 # Backstory
 
@@ -30,11 +37,16 @@ Coding involves writing instructions for a computer to follow. Ultimately, these
 
 Like all coding languages, **Python** is designed to serve as a representational medium. The people who created Python built it with assumptions about what it would be used for and what sorts of things are important about reading and writing code. These assumptions are borne out through **syntax**, the rules for writing code. Similar to how a spoken language involves putting together words with different meanings to communicate complex ideas, coding in Python involves putting together **commands** and **patterns**, which a piece of software called a **compiler** will use to create instructions for the computer.
 
-[insert graphic]
-
 The computer will follow these instructions, producing complex behavior based on how the commands and patterns in the code interact with one another. As long as the code follows the correct synax conventions, the compiler will create corresponding instructions for the computer. If the compiler can't figure out how to interpret the code (probably because the code failed to follow syntax rules), the code will fail and produce an error message.
 
-[insert image of syntax error]
+<pre>
+    <code class='err'>
+          File "main.py", line 1
+    print('it's not going to work')
+              ^
+SyntaxError: invalid syntax
+</code>
+</pre>
 
 You'll probably experience syntax errors a lot when you're learning how to code. These moments of misunderstanding between you and the compiler can be positive and productive as you learn to communicate with one another, as long as you don't let it's terseness discourage you!
 
@@ -71,15 +83,14 @@ Your program can include as many of these commands as you want! There are a coup
 * For now, you should only print **strings**; this means that you should always put matching quotation marks around the text you want the computer to `print()`
 
 <VideoModule title="Print Video Tutorial" video="#">
-    This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
-    <div class='buttons has-addons pt-4'>
-        <a href='#' class='button'>Starter Code</a>
-        <a href="#" class='button'>Ending Code</a>
-    </div>
+    This video covers the content in the above section in a tutorial format. Code along with the video to practice running, testing, and editing Python programs!
+
+    The buttons below will take you to starter code (similar to what the video will start with) that you can edit as you practice. You should "fork" (i.e., copy) the code before working with it; watch the video for a demonstration.
+    <button class='button is-fullwidth'>Starter Code</button>
 </VideoModule>
 
 <Callout title="Try It!">
-Try copying the code above into your code editor. Run the code, and observe the **output**. Then, try experimenting with the code to address the prompts below:
+Try copying one of the code examples above into your code editor. Run the code, and observe the **output**. Then, try experimenting with the code to address the prompts below:
 
 * Can you change the code to create a syntax error on purpose? Try finding three things in the code that are *unsafe* to change
 * Now try the opposite--what parts of the code are safe to change?
@@ -130,11 +141,10 @@ After the last line of your "script", the program will end and you'll have to pr
 After adding `input()` to your programs, you can write programs that tell the computer to *interact* with the reader of your interactive narrative. Right now, these programs aren't very "smart"; the story doesn't change based on what the user says during those interactions. We will cover that stuff in the next two modules. For now, it's okay to just practice writing new code on your own, and to begin thinking about what sorts of choices users might make in a story that you write.
 
 <VideoModule title="Input Video Tutorial" video="#">
-    This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
-    <div class='buttons has-addons pt-4'>
-        <a href='#' class='button'>Starter Code</a>
-        <a href="#" class='button'>Ending Code</a>
-    </div>
+    This video covers the content in the above section in a tutorial format. Code along with the video to practice running, testing, and editing Python programs!
+
+    The buttons below will take you to starter code (similar to what the video will start with) that you can edit as you practice. You should "fork" (i.e., copy) the code before working with it; watch the video for a demonstration.
+    <button class='button is-fullwidth'>Starter Code</button>
 </VideoModule>
 
 <Callout title="Try It!">
@@ -170,3 +180,13 @@ Follow the instructions below to complete the hands-on component of this module:
         <a href="#" class="card-footer-item">View Practice Questions</a>
     </div>
 </div>
+
+# Next Up...
+
+In the next module, you'll learn about how we can create Python programs that **remember** information they gather from users. click the button below to go to the next module!
+
+<div class='container has-text-right'>
+    <a href="{base}/modules/module-2" class='button is-primary'>Go to Module 2</a>
+</div>
+
+----

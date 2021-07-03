@@ -37,9 +37,9 @@
         background-color: $grey-dark;
         border-radius: 20px;
         color: whitesmoke;
-        // strong {
-        //     color: whitesmoke;
-        // }
+        strong {
+            color: whitesmoke;
+        }
         h3 {
             color: whitesmoke;
         }

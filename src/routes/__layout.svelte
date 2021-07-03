@@ -62,8 +62,8 @@
 <footer class="footer">
 	<div class="content has-text-centered">
 		<p>
-		These modules were written by <strong>Jon Stapleton</strong> on behalf of <strong>CodeVA</strong>. The source code is licensed
-		<a href="http://opensource.org/licenses/mit-license.php">GPLv3</a>. The website content
+		These modules were written by <a href="https://jonstapleton.github.io/"><strong>Jon Stapleton</strong></a> on behalf of <strong>CodeVA</strong>. The source code is licensed
+		<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. The website content
 		is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
 		</p>
 	</div>
