@@ -8,6 +8,9 @@ layout: module
 
 <script>
     import Callout from "$lib/components/Callout.svelte";
+    import CodeAndConsole from '$lib/components/CodeAndConsole.svelte';
+    import Markdown from '$lib/components/Markdown.svelte';
+    import VideoModule from '$lib/components/VideoModule.svelte';
 </script>
 
 # Backstory
@@ -34,13 +37,13 @@ The computer will follow these instructions, producing complex behavior based on
 
 [insert image of syntax error]
 
-You'll probably experience syntax errors a lot when you're learning how to code. These moments of misunderstanding between you and the compiler can be positive and productive as you learn to communicate with one another as long as you don't let it's terseness discourage you!
+You'll probably experience syntax errors a lot when you're learning how to code. These moments of misunderstanding between you and the compiler can be positive and productive as you learn to communicate with one another, as long as you don't let it's terseness discourage you!
 
 # Guided Inquiry
 
-Throughout these modules, you'll read code segments demonstrating different Python commands and patterns. As you make your way through the module, we *highly* encourage you to try writing code using those commands and patterns. Talking about code can sometimes be pretty abstract; it will be helpful to pair this information with some experience. First, you need somewhere to write and compile your code!
+Throughout these modules, you'll read code segments demonstrating different Python commands and patterns. We *highly* encourage you to try writing code using those commands and patterns. Talking about code can sometimes be pretty abstract; it will be helpful to pair this information with some experience. First, you need somewhere to write and compile your code!
 
-Follow either set of instructions below to get set up with Python on your computer. You can either use **[Repl.it]()** (which runs in your web browser and requires a pretty good internet connection) or you can set up Python on your computer (which requires no internet, but does involve installing unfamiliar software and may take some time). Click on one of the links below to see instructions for how to get set up with either set of tools:
+Follow either set of instructions below to get set up with Python on your computer. You can either use **[Repl.it]()** (which runs in your web browser and requires a pretty good internet connection) or you can set up Python on your computer (which requires no internet after you download the software, but does involve installing unfamiliar software and may take some time). Click on one of the links below to see instructions for how to get set up with either set of tools:
 
 * How to Use Repl.it (Recommended)
 * How to Install and Use Python
@@ -68,8 +71,13 @@ Your program can include as many of these commands as you want! There are a coup
 * The name of the function you are using is `print()`, and the text inside the quotation marks is a **string**
 * For now, you should only print **strings**; this means that you should always put matching quotation marks around the text you want the computer to `print()`
 
-<Callout title="Try It!">
 
+
+<VideoModule title="Speak Video Tutorial" video="#">
+    This video covers the content in the above section, and demonstrates how to interact with [Repl.it]() using the provided code examples. Feel free to code along with the video to help practice running, testing, and editing Python programs!
+</VideoModule>
+
+<Callout title="Try It!">
 Try copying the code above into your code editor. Run the code, and observe the **output**. Then, try experimenting with the code to address the prompts below:
 
 * Can you change the code to create a syntax error on purpose? Try finding three things in the code that are *unsafe* to change
@@ -80,11 +88,53 @@ Try copying the code above into your code editor. Run the code, and observe the 
 
 ## Listen
 
-Code is deterministic -- if the code is the same, the behavior is the same
+The programs you read about above don't do very much; they just show information to the user via the console. Outputting text is going to be a vital component of our interactive narratives, but we also need the computer to get *input* from the user. Right now our program only instructs the computer to speak; we need to instruct the computer to listen, as well.
 
-Experimentation Strategies
+The command that tells the computer to "listen" to the user is called `input()`. Try typing the code below into [Repl.it](), and then run the code.
+
+```python
+# editor
+print("What is your name?")
+input()
+print("It's nice to meet you!")
+```
+
+You should end up with something that looks like this in your console:
+
+```text
+What is your name?
+ 
+  
+```
+
+At first glance, it seems like your program is broken; why didn't it print the last message? The answer lies in the `input()` command. After you run your program, the computer follows the commands *in order*. When it gets to the `input()` command after printing the first message, it **waits for the user to type something in to the console**. Try it out for yourself; run your code, and then click over into the console area and try typing something on your keyboard. When you're done, press `Enter` to move on with the rest of the program!
+
+When you write Python programs, you can use `print()` to "speak" to the person using your program, and you can use `input()` as a way of prompting them to interact with your program. With these two commands, you can start making "interactive" programs like the chatbot below:
+
+```python
+print("Hello! I'm your digital assistant")
+print("What is your name?")
+input() # wait for the user to respond, then...
+print("Welcome! Please tell me your age, as well")
+input()
+print("It's so nice to meet you! How are you feeling today?")
+input()
+print("Thanks for chatting with me!")
+print("See you tomorrow!")
+# etc...
+```
+
+After the last line of your "script", the program will end and you'll have to press the "play" button again to interact with your Python program.
+
+<Callout title="Try It!">
+
+</Callout>
 
 ## Remember
+
+<Callout title="Try It!">
+
+</Callout>
 
 # Prompt
 

@@ -1,15 +1,19 @@
 <script>
     export let video="https://www.youtube.com/embed/aiegUzPX8Zc";
     export let title = "An embedded YouTube video at URL" + video;
+
+    import Markdown from '$lib/components/Markdown.svelte';
 </script>
 
-<div class='card py-4 px-6 video-module'>
-    <div class='card-body pt-4'>
+<div class='card py-4 px-6 m-5 video-module'>
+    <div class='card-body py-4'>
         <div class='columns'>
             <div class='column pr-5 mr-5 content text'>
                 <h3>{title}</h3>
                 <!-- description -->
-                <slot></slot>
+                <Markdown>
+                    <slot></slot>
+                </Markdown>
             </div>
             <div class='column'>
                 <div class="player">
@@ -39,6 +43,5 @@
         h3 {
             color: whitesmoke;
         }
-        margin: 2rem;
     }
 </style>

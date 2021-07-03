@@ -1,3 +1,11 @@
+---
+title: 0. Course Overview
+description: These modules are designed to help you get familiar with Python while exploring *interactive narrative design*, where we put together stories that leave space for the reader to explore, make choices, and engage with the events of the story in a participatory way.
+previous: "/"
+next: module-1
+layout: module
+---
+
 <script>
     import VideoModule from '$lib/components/VideoModule.svelte';
     import Fa from 'svelte-fa'
@@ -6,9 +14,7 @@
 
 # Welcome!
 
-These modules are designed to help you get familiar with Python while exploring *interactive narrative design*, where we put together stories that leave space for the reader to explore, make choices, and engage with the events of the story in a participatory way.
-
-Each module follows the same format:
+Each module in this course follows the same format:
 
 * **Backstory:** Unpack the context around the module, set up catalyzing questions to guide the inquiry throughout the module, and establish goals and objects for your engagement with the module.
 * **Guided Inquiry:** Step through a sequence of tutorials and hands-on activities designed to help you learn the basic ideas presented in the module
@@ -28,7 +34,7 @@ Below, you'll find some contextualizing information about these modules and our 
 An *interactive narrative* is a story that invites the reader to participate in its outcome. You may have read a "choose-your-own-adventure" book in the past, where at critical moments you, as the reader, chose to follow one path or another affected by the characters' choices.
 
 <VideoModule title="Bury Me, My Love" video="https://www.youtube.com/embed/Xbm3B__eQoI">
-    <p><i>Bury Me, My Love</i> is an interactive fiction where you participate in the refugee narrative of a couple fleeing the Syrian civil war. While the story itself is fictional, it is profoundly grounded in the lived histories of real people experiencing these events, as well as the political realities which shape those narratives.</p>
+    *Bury Me, My Love* is an interactive fiction where you participate in the refugee narrative of a couple fleeing the Syrian civil war. While the story itself is fictional, it is profoundly grounded in the lived histories of real people experiencing these events, as well as the political realities which shape those narratives.
     <div class='has-text-right'>
         <a href="https://burymemylove.arte.tv/"><button class='button is-light'>Learn More</button></a>
     </div>

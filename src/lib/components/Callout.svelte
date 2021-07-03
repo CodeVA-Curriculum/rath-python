@@ -3,7 +3,7 @@
     export let title="No Title!";
 </script>
 
-<div class='callout card content section'>
+<div class='callout card content section m-5'>
     <h3>💡 {title}</h3>
     <Markdown>
         <slot />

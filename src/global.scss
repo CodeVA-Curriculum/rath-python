@@ -19,14 +19,16 @@ $body-overflow-y: auto;
 
 .blog {
     @import './src/lib/styles/blog.scss';
-    code {
-        @import './src/lib/styles/code.scss';
-        
-    }
-    pre {
-        border-radius: 10px;
-        background: #2b2b2b;
-    }
+    
+}
+
+code {
+    @import './src/lib/styles/code.scss';
+}
+pre {
+    code { color: white };
+    border-radius: 10px;
+    background: #2b2b2b;
 }
 
 

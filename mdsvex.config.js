@@ -1,3 +1,10 @@
+// Import the highlighter, for example, say I want prism with javascript support
+import pkg from 'prismjs/components/prism-core.js';
+const {highlight, languages } = pkg;
+import 'prismjs/components/prism-clike.js';
+import 'prismjs/components/prism-javascript.js';
+import 'prismjs/components/prism-python.js'
+
 const config = {
   "extensions": [".svelte.md", ".md", ".svx"],
 
@@ -8,7 +15,15 @@ const config = {
     module: './src/lib/components/ModuleHeader.svelte'
   },
 
-  "remarkPlugins": [],
+  highlight: function (code, lang) {
+    const grammar = languages[lang];
+    if(grammar) {
+        return highlight(code, grammar);
+    }
+  },
+
+  "remarkPlugins": [
+  ],
   "rehypePlugins": []
 };
 

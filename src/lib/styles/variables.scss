@@ -15,3 +15,10 @@ $grey-dark: #323F47;
 $text: $grey-dark;
 $text-strong: $grey-dark;
 $text-invert: whitesmoke;
+$blue: #64B4E4;
+$green: #84C45A;
+$link: $green;
+
+p > a {
+    font-weight: $weight-bold;
+}
