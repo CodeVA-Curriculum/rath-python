@@ -54,14 +54,17 @@ You'll probably experience syntax errors a lot when you're learning how to code.
 
 Throughout these modules, you'll read code segments demonstrating different Python commands and patterns. We *highly* encourage you to try writing code using those commands and patterns. Talking about code can sometimes be pretty abstract; it will be helpful to pair this information with some experience. First, you need somewhere to write and compile your code!
 
-Follow either set of instructions below to get set up with Python on your computer. You can either use **[Repl.it]()** (which runs in your web browser and requires a pretty good internet connection) or you can set up Python on your computer (which requires no internet after you download the software, but does involve installing unfamiliar software and may take some time). Click on one of the links below to see instructions for how to get set up with either set of tools:
+If this is your first time working with Python (or any coding language at all), we recommend that you use [Repl.it](https://replit.com/) as your coding environment.[Repl.it](https://replit.com/) runs in your web browser, which means that you don't have to download or install any software to get started with it. Check out the video below for instructions on how to get started:
 
-* How to Use Repl.it (Recommended)
-* How to Install and Use Python
+<VideoModule title="Getting Started with Repl.it" video="https://www.loom.com/embed/1aeb517545da492dab3f735fcac27980">
+[Repl.it](https://replit.com/) is an online "integrated development environment", or "IDE". It is designed to help you get started with coding without having to install any new software or set anything up on your computer. [Repl.it](https://replit.com/) isn't as fast or full-featured as a "native" Python installation, but it's a lot easier to get started with (and it's more than powerful enough for our interactive narratives).
+
+<a href="https://replit.com/" class='my-4 button is-fullwidth has-text-weight-normal'>Go to Replit.com</a>
+</VideoModule>
 
 # Speak
 
-As we discussed above, all software has some form of input and output. The first, and easiest, form of output to learn in Python is **printing** to something called the **console**. In [Repl.it](), any messages your code says to `print()` will show up in the box to the right of where you write your code. To print to the console, we must use an aptly-named Python function (or command) called `print()`. The syntax for `print()` is as follows:
+As we discussed above, all software has some form of input and output. The first, and easiest, form of output to learn in Python is **printing** to something called the **console**. In [Repl.it](https://replit.com/), any messages your code says to `print()` will show up in the box to the right of where you write your code. To print to the console, we must use an aptly-named Python function (or command) called `print()`. The syntax for `print()` is as follows:
 
 ```python
 print("A message to show to the user")
@@ -82,11 +85,11 @@ Your program can include as many of these commands as you want! There are a coup
 * The name of the function you are using is `print()`, and the text inside the quotation marks is a **string**
 * For now, you should only print **strings**; this means that you should always put matching quotation marks around the text you want the computer to `print()`
 
-<VideoModule title="Print Video Tutorial" video="#">
+<VideoModule title="Print Video Tutorial" video="https://www.loom.com/embed/23030bd5c60f46e8b6ae77e80c96a603">
     This video covers the content in the above section in a tutorial format. Code along with the video to practice running, testing, and editing Python programs!
 
     The buttons below will take you to starter code (similar to what the video will start with) that you can edit as you practice. You should "fork" (i.e., copy) the code before working with it; watch the video for a demonstration.
-    <button class='button is-fullwidth'>Starter Code</button>
+    <a href="https://replit.com/@JonStapleton1/Print-Statements-Starter" class='button is-fullwidth'>Starter Code</a>
 </VideoModule>
 
 <Callout title="Try It!">
@@ -140,11 +143,11 @@ After the last line of your "script", the program will end and you'll have to pr
 
 After adding `input()` to your programs, you can write programs that tell the computer to *interact* with the reader of your interactive narrative. Right now, these programs aren't very "smart"; the story doesn't change based on what the user says during those interactions. We will cover that stuff in the next two modules. For now, it's okay to just practice writing new code on your own, and to begin thinking about what sorts of choices users might make in a story that you write.
 
-<VideoModule title="Input Video Tutorial" video="#">
+<VideoModule title="Input Video Tutorial" video="https://www.loom.com/embed/81d81c249c4a41d2a7cea6da359ecff6">
     This video covers the content in the above section in a tutorial format. Code along with the video to practice running, testing, and editing Python programs!
 
     The buttons below will take you to starter code (similar to what the video will start with) that you can edit as you practice. You should "fork" (i.e., copy) the code before working with it; watch the video for a demonstration.
-    <button class='button is-fullwidth'>Starter Code</button>
+    <a href="https://replit.com/@JonStapleton1/Input-Starter" class='button is-fullwidth'>Starter Code</a>
 </VideoModule>
 
 <Callout title="Try It!">
@@ -159,7 +162,7 @@ Try copying one of the code examples above into your code editor. Run the code, 
 
 When coders only know how to use a couple of commands, their creative space is pretty small. Using only `print()` and `input()` commands is pretty limiting! Don't worry--we will add a lot more tools to your toolbox in the (very) near future. For now, check out the prompt below, which is designed to help you practice writing Python programs that include `print()` and `input()` commands:
 
-<Callout title="Print & Input Mini-Project" footerLink="#">
+<Callout title="Print & Input Mini-Project" footerLink="https://replit.com/@JonStapleton1/Print-and-Input-Project-Starter">
 [StoryCorps](https://storycorps.org/) is an organization that works to collect stories from people around the world. Many of the stories collected by StoryCorps over the years are now archived in the Library of Congress, helping to preserve narratives about life in America told by people from many different walks of life. Part of StoryCorp's work involves helping people who may not have interview experience conduct interviews with friends and family. To help with this process, they have curated a list of [great questions](https://storycorps.org/participate/great-questions/).
 
 Follow the instructions below to complete the hands-on component of this module:
@@ -167,17 +170,17 @@ Follow the instructions below to complete the hands-on component of this module:
 1. Think of someone you could interview for StoryCorps. They could be a family member, a friends, a colleauge, or a student.
 1. Go to https://storycorps.org/participate/great-questions/
 2. Find a list of compelling questions that you would like to ask your hypothetical interview subject
-4. Write an interactive Python program that asks the user the questions you've selected, and pauses to allow them to answer by typing into the console.
+4. Write an interactive Python program that asks the user the questions you've selected, and pauses to allow them to answer by typing into the console. You can use the [starter code](https://replit.com/@JonStapleton1/Print-and-Input-Project-Starter) as a starting point if you'd like
 
 </Callout>
 
 <div class='card my-5'>
     <div class='card-content'>
         <h3>OpenClass AI Practice Questions</h3>
-        <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master `print()` and `input()` functions in Python.</p>
+        <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master <code>print()</code> and <code>input()</code> functions in Python.</p>
     </div>
     <div class='card-footer'>
-        <a href="#" class="card-footer-item">View Practice Questions</a>
+        <a href="https://codeva.openclass.ai/resource/assignment-60e215745b15f68db6620cb0?code=8cSRL_5lsFIdfA" class="card-footer-item">View Practice Questions</a>
     </div>
 </div>
 
@@ -186,7 +189,7 @@ Follow the instructions below to complete the hands-on component of this module:
 In the next module, you'll learn about how we can create Python programs that **remember** information they gather from users. click the button below to go to the next module!
 
 <div class='container has-text-right'>
-    <a href="{base}/modules/module-2" class='button is-primary'>Go to Module 2</a>
+    <a href="{base}/modules/module-2" class='button is-primary' disabled>Go to Module 2</a>
 </div>
 
 ----

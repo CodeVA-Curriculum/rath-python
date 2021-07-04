@@ -19,7 +19,7 @@
 
 <div class='hero is-primary banner'>
     <div class='columns'>
-        <div class='column is-6 is-offset-3'>
+        <div class='column is-6 is-offset-3 px-5'>
             <h1 class='title'>{title}</h1>
             <p class='block'>{description}</p>
             <div class='buttons has-addons'>
@@ -44,7 +44,7 @@
     </div>
 </div>
 <div class='columns'>
-    <div class='blog column is-6 is-offset-3 content'>
+    <div class='blog column is-6 is-offset-3 content px-5'>
         <slot></slot>
     </div>
 </div>
