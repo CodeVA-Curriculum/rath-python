@@ -16,10 +16,10 @@ const config = {
 			fallback: null
 		}),
         // Uncomment before deployment
-        // paths: {
-        //     base: '/rath-python',
-        //     assets: '/rath-python'
-        // },
+        paths: {
+            base: '/rath-python',
+            assets: '/rath-python'
+        },
 	},
 
     preprocess: [
