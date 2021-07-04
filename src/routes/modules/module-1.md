@@ -1,6 +1,6 @@
 ---
 title: 1. Speaking & Listening
-description: This module introduces three fundamental tenets of computing--input, output, and storage. Every computing device or piece of software that you use can do these three things, and so our interactive narratives will need to as well. In practice, we will use these three things to create software that can speak with and listen to the reader/user.
+description: This module introduces two fundamental tenets of computing--input& output. Every computing device or piece of software that you use can do these two things, and so our interactive narratives will need to as well. In practice, we will use these input and output to create software that can speak with and listen to the reader/user.
 previous: module-0
 layout: module
 ---
@@ -25,9 +25,8 @@ In this series of modules, you will learn how to create Python programs that tel
 
 1. Show users different parts of the story
 2. Prompt the user to interact with the story
-3. Store user inputs to use later on in the story if appropriate
 
-In this module, we will learn how to create Python programs that generate **output**, ask users to produce data as **input** to the program, and that **store** user inputs (and other kinds of data) for use later on in the program.
+In this module, we will learn how to create Python programs that generate **output** and ask users to produce data as **input** to the program.
 
 ## Coding as a System of Representation
 
@@ -54,7 +53,7 @@ You'll probably experience syntax errors a lot when you're learning how to code.
 
 Throughout these modules, you'll read code segments demonstrating different Python commands and patterns. We *highly* encourage you to try writing code using those commands and patterns. Talking about code can sometimes be pretty abstract; it will be helpful to pair this information with some experience. First, you need somewhere to write and compile your code!
 
-If this is your first time working with Python (or any coding language at all), we recommend that you use [Repl.it](https://replit.com/) as your coding environment.[Repl.it](https://replit.com/) runs in your web browser, which means that you don't have to download or install any software to get started with it. Check out the video below for instructions on how to get started:
+If this is your first time working with Python (or any coding language at all), we recommend that you use [Repl.it](https://replit.com/) as your coding environment. [Repl.it](https://replit.com/) runs in your web browser, which means that you don't have to download or install any software to get started with it. Check out the video below for instructions on how to get started:
 
 <VideoModule title="Getting Started with Repl.it" video="https://www.loom.com/embed/1aeb517545da492dab3f735fcac27980">
 [Repl.it](https://replit.com/) is an online "integrated development environment", or "IDE". It is designed to help you get started with coding without having to install any new software or set anything up on your computer. [Repl.it](https://replit.com/) isn't as fast or full-featured as a "native" Python installation, but it's a lot easier to get started with (and it's more than powerful enough for our interactive narratives).
@@ -183,6 +182,14 @@ Follow the instructions below to complete the hands-on component of this module:
         <a href="https://codeva.openclass.ai/resource/assignment-60e215745b15f68db6620cb0?code=8cSRL_5lsFIdfA" class="card-footer-item">View Practice Questions</a>
     </div>
 </div>
+
+# Catalyzing Questions
+
+1. Imagine that you were going to use your interview program to conduct a real StoryCorps interview. Is a program that *only* uses `print()` and `input()` appropriate for that task? Why or why not?
+2. What additional pieces of functionality do you need to be able to code in order for you to create an **interactive narrative** like the one in [Module 0]({base}/modules/module-0)?
+3. If you were to teach `print()` and `input()` to students, how would you introduce the topic?
+
+----
 
 # Next Up...
 

@@ -21,7 +21,7 @@
 					<Fa icon={faPlus} size="1.5x" />
 				</div>
 				<img alt="The Python logo--two stylized snakes forming a 'plus' sign" src={pyLogo} height="28">
-				<h1 class='has-text-weight-bold is-size-5 ml-5'>Designing Interactive Narratives with Python</h1>
+				<h1 class='has-text-weight-bold is-size-5 ml-5 is-hidden-touch'>Designing Interactive Narratives with Python</h1>
 			</a>
 	  
 			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

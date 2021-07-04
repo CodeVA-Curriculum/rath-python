@@ -22,7 +22,7 @@ layout: module
 
 Each module in this course follows the same format:
 
-* **Backstory:** Unpack the context around the module, set up catalyzing questions to guide the inquiry throughout the module, and establish goals and objects for your engagement with the module.
+* **Backstory:** Unpack the context around the module, set up catalyzing questions to guide the inquiry throughout the module, and establish goals and objectives for your engagement with the module.
 * **Guided Inquiry:** Step through a sequence of tutorials and hands-on activities designed to help you learn the basic ideas presented in the module
 * **Prompt:** A tightly-bounded, focused activity designed to facilitate sustained engagement with the ideas presented in the module
 * **Catalyzing Questions:** A series of questions intended to provoke reflection & to put the module's content in context
@@ -64,7 +64,7 @@ Interactive narratives engage readers' agency, and explore how people's choices 
 
 # Why Coding, and Why Python?
 
-While many people have created pre-digital interactive narratives, the art form is, at least right now, a primarily digital one. By creating interactive stories with code, authors can express nonlinear, branching narratives with many possible endings and many possible paths for the reader to experience.
+While many people have created pre-digital interactive narratives, the art form is (at least right now) primarily a digital one. By creating interactive stories with code, authors can express nonlinear, branching narratives with many possible endings and many possible paths for the reader to experience.
 
 We chose to adopt **Python** has the central tool for these modules for a couple of related reasons:
 
@@ -72,7 +72,7 @@ We chose to adopt **Python** has the central tool for these modules for a couple
 * **Ubiquity:** Python has been around long enough that it has built up a large community of users, resources, and platforms. If you want to learn more about coding, you won't have any trouble finding more Python projects to work on
 * **Flexibility:** There are dozens of tools out there for writing code using Python, from web-based editors to fully offline development environments. No matter who you are and what resources you have access to, there's a good chance you can write and test Python on your computer
 
-Because this is an introductory course, our interactive narratives will have sort of a "retro" vibe; reader will interact with a program called a **console** (also known as a "terminal" or "command prompt") to read the story and make choices. You can play an interactive narrative made with Python below, if you'd like; just click the green **Play** button in the bottom right-hand corner of the black **console** area.
+Because this is an introductory course, our interactive narratives will have sort of a "retro" vibe; readers will interact with a program called a **console** (also known as a "terminal" or "command prompt") to read the story and make choices. You can play an interactive narrative made with Python below if you'd like; just click the green **Play** button in the bottom right-hand corner of the black **console** area.
 
 <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@JonStapleton1/zork-py?embed=true&outputonly=1"></iframe>
 
@@ -80,12 +80,13 @@ Because this is an introductory course, our interactive narratives will have sor
 
 In the following modules, we will guide you through learning to create interactive narratives with Python. The path is broken up into the following stages:
 
-* Output, Input, & Variables
+* Output& Input
+* Variables
 * Conditional Statements
 * Functions
 * Designing Interactive Narratives
 
-Each stage contains some text and examples, as well as a project that you can complete to help hone your skills. The best way to learn how to code is to jump in! Remember that making mistakes is part of the learning process; approach these modules with a sense of experimentation and discovery, and you'll be very successful.
+Each stage contains some text and examples, as well as a project that you can complete to help hone your skills. The best way to learn how to code is to jump in! Remember--making mistakes is part of the learning process. Approach these modules with a sense of experimentation and discovery, and you'll be very successful.
 
 <div class='container has-text-right my-5'>
     <a href='{base}/modules/module-1' ><button class='button is-primary'>Go to Module 1<Fa class='ml-3' icon={faChevronRight} /></button></a>
