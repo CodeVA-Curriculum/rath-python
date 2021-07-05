@@ -80,7 +80,7 @@ Because this is an introductory course, our interactive narratives will have sor
 
 In the following modules, we will guide you through learning to create interactive narratives with Python. The path is broken up into the following stages:
 
-* Output& Input
+* Output & Input
 * Variables
 * Conditional Statements
 * Functions
