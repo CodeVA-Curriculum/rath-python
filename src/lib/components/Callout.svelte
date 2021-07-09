@@ -14,7 +14,7 @@
     </div>
     {#if footerLink}
     <div class='card-footer linker'>
-        <a class='card-footer-item' href="{base}/{footerLink}">View Starter Code</a>
+        <a class='card-footer-item' href="{footerLink}">View Starter Code</a>
     </div>
     {/if}
 </div>
