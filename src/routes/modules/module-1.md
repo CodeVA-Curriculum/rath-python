@@ -41,7 +41,7 @@ Coding involves writing instructions for a computer to follow. Ultimately, these
 
 Like all coding languages, **Python** is designed to serve as a representational medium. The people who created Python built it with assumptions about what it would be used for and what sorts of things are important about reading and writing code. These assumptions are borne out through **syntax**, the rules for writing code. Similar to how a spoken language involves putting together words with different meanings to communicate complex ideas, coding in Python involves putting together **commands** and **patterns**, which a piece of software called a **compiler** will use to create instructions for the computer.
 
-The computer will follow these instructions, producing complex behavior based on how the commands and patterns in the code interact with one another. As long as the code follows the correct synax conventions, the compiler will create corresponding instructions for the computer. If the compiler can't figure out how to interpret the code (probably because the code failed to follow syntax rules), the code will fail and produce an error message.
+The computer will follow these instructions, producing complex behavior based on how the commands and patterns in the code interact with one another. As long as the code follows the correct syntax conventions, the compiler will create corresponding instructions for the computer. If the compiler can't figure out how to interpret the code (probably because the code failed to follow syntax rules), the code will fail and produce an error message.
 
 <pre>
     <code class='err'>
