@@ -1,4 +1,4 @@
-<div class='card quote has-text-centered'>
+<div class='card quote has-text-centered my-5'>
     <div class='card-content'>
         <p class='subtitle'><slot /></p>
     </div>

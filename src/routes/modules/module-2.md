@@ -3,11 +3,14 @@ title: 2. Remember
 description: This module introduces a third big idea in computing--storage. Use variables to store data that your program can use later.
 previous: module-1
 layout: module
+video: "https://www.youtube.com/embed/7Sv-XAlBu90"
 ---
 
 <script>
     import Callout from '$lib/components/Callout.svelte';
     import Quote from '$lib/components/Quote.svelte';
+    import VideoModule from '$lib/components/VideoModule.svelte';
+    import {faPepperHot} from '@fortawesome/free-solid-svg-icons';
 </script>
 
 # Backstory
@@ -54,6 +57,7 @@ To create variables in Python, you need to complete two steps:
 Let's start with **string** data; you used **strings** in the previous module when you started using the `print()` function. Here's an example of printing **string** data *without* using a variable:
 
 ```python
+# No variable!
 print("Hello, ")
 print("Jon")
 print("I am a computer.")
@@ -62,35 +66,78 @@ print("I am a computer.")
 If you wanted to use a variable in a program like this, you would (1) create word to represent some string data, and (2) use it in place of a string somewhere in your program. For example, maybe we want to store the name of the user in a variable:
 
 ```python
-user_name = "Jon"
+user_name = "Jon" # Make a variable
 print("Hello, ")
-print(user_name)
+print(user_name) # Print the variable
 print("I am a computer")
 ```
 
 Try this code out in a [Repl.it]() project--You'll notice a couple of important things:
 
 * The first line of the program doesn't really "do" anything to the console; it's invisible to the user because it is doing an *internal* operation that only the computer knows about
-* The line where you `print()` the variable called `user_name` doesn't have any quotation marks; it's a reference the variable name, not a string with the text "user_name" in it
+* The line where you `print()` the variable called `user_name` doesn't have any quotation marks; it's a reference to the variable name, not a string with the text "user_name" in it
+* The variable called `user_name` doesn't have any spaces--we use underscores instead. Variable names cannot contain *any* whitespace
+
+<VideoModule title="Variable Basics" video="https://www.youtube.com/embed/7Sv-XAlBu90">
+</VideoModule>
 
 <Callout title="Try It Out!">
 Edit the above program in [Repl.it](), experimenting with the following things:
 
 * Find the line that says `print(user_name)`. Put `user_name` in quotation marks like you would with a normal `print()` statement. What changes?
 * Find the line that says `user_name = "Jon"`. Change `"Jon"` to something else, and run the program. What changes?
-* Create a second variable after the first line of code, but before the first `print()` command. Then, add another line of code to `print()` that variable to the console. You can use whatever "label" you want for the variable (just make sure you don't use a label that's already taken by something else, like `print`, `input`, or `user_name`)
+* Create a second variable with a different name after the first line of code, but before the first `print()` command. Then, add another line of code to `print()` that variable to the console. You can use whatever "label" you want for the variable (just make sure you don't use a label that's already taken by something else, like `print`, `input`, or `user_name`)
 
 </Callout>
 
-# Remembering & Forgetting
+# Remembering Conversations
 
+Using variables to simply store strings to use later in the code isn't all that useful. Instead, we need to store the strings the user types into the program. Here's a code pattern you will see a *lot* as you work your way up to writing interactive narratives:
 
+```python
+response = input()
+print("You said:")
+print(response)
+```
 
-# Making Things Prettier
+This pattern is a little opaque, so it bears some explanation. In the program above, the computer pauses and lets the user type something into the console. After the user presses "Enter", the code *stores their response* in the variable called `response` before moving on to the `print()` statements. When it gets to the last line, the one that says `print(response)`, the computer "opens up" the variable called `response` and uses the value stored within it.
+
+If you'd like to put the variable value inside of a printed string rather than in it's own `print()` statement, you could re-write the example above like so:
+
+```python
+response = input()
+print("You said: " + response)
+```
+
+Using the `+` symbol between two strings causes the program to "combine" the two separate strings (in this case, `"You said: "` and `response`) into one mega-string before printing it out.
+
+<VideoModule title="Capturing User Input" video="https://www.youtube.com/embed/7Sv-XAlBu90">
+</VideoModule>
 
 <Callout title="Try It Out!">
+Copy the program below into a [Repl.it]() project:
+
+```python
+print("Hello! What is your name?")
+name = input()
+print("Greetings, " + name + "!")
+```
+
+Each of the following changes to the code either causes an error, or causes a harmless change in the program. Try them out, and see which is which. If your change results in an error, change it back before moving on.
+
+* Change `name` on line 2 to `user_name`
+* Add this line to the end of the program: `print("How are you, " + name + "?")`
+* Put "name" in quotation marks on line 3.
+
 </Callout>
 
 # Apply Your Skills
 
 Choose one of the mini-projects below to help you practice your skills! The projects each have a different difficulty level; **Mild** projects are pretty short and simple, **Medium** projects require a little more creativity, and **Spicy** projects are designed to be a challenge!
+
+<Prompt title="Mild: Mad Libs" footerLink="#" icon={faPepperHot}>
+</Prompt>
+
+# Catalyzing Questions
+
+* What happens when you use the same variable to store different kinds of data?

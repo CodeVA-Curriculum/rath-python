@@ -10,10 +10,7 @@
     }
     $: if(previous) {
         preEnable = true;
-    }
-
-    $: console.log(activities);
-    
+    }    
     import Fa from 'svelte-fa';
     import {faArrowLeft, faArrowRight, faHome} from '@fortawesome/free-solid-svg-icons'
     import {base} from '$app/paths';
