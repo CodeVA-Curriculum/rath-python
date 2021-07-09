@@ -1,8 +1,13 @@
 ---
 title: 1. Speaking & Listening
-description: This module introduces two fundamental tenets of computing--input& output. Every computing device or piece of software that you use can do these two things, and so our interactive narratives will need to as well. In practice, we will use these input and output to create software that can speak with and listen to the reader/user.
+description: This module introduces two fundamental tenets of computing--input & output. Every computing device or piece of software that you use can do these two things, and so our interactive narratives will need to as well.
 previous: module-0
 layout: module
+video: "https://www.loom.com/embed/0439c0b6685640f4b883b7ee5024f5b7"
+activities:
+    - "Experiment with print statements"
+    - "Experiment with input statements"
+    - "Complete a small project"
 ---
 
 <script>

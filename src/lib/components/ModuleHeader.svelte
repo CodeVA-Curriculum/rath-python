@@ -1,5 +1,5 @@
 <script>
-    export let title, description
+    export let title, description, video, activities
     export let previous;
     export let next;
     let preEnable = false;
@@ -11,6 +11,8 @@
     $: if(previous) {
         preEnable = true;
     }
+
+    $: console.log(activities);
     
     import Fa from 'svelte-fa';
     import {faArrowLeft, faArrowRight, faHome} from '@fortawesome/free-solid-svg-icons'
@@ -19,10 +21,23 @@
 
 <div class='hero is-primary banner'>
     <div class='columns'>
-        <div class='column is-6 is-offset-3 px-5'>
+        <div class='column is-3'></div>
+        
+        <div class='column px-5'>
             <h1 class='title'>{title}</h1>
             <p class='block'>{description}</p>
-            <div class='buttons has-addons'>
+            <p class='block subtitle'>In this module, you will:</p>
+            {#if activities}
+            {#each activities as a}
+            <div>
+                <label class='checkbox'>
+                    <input type='checkbox'>
+                    {a}
+                </label>
+            </div>
+            {/each}
+            {/if}
+            <div class='block buttons has-addons mt-5'>
                 {#if preEnable}
                 <a class='button nav' href="{base}/modules/{previous}">
                     <Fa icon={faArrowLeft} />
@@ -41,6 +56,14 @@
                 {/if}
             </div>
         </div>
+        {#if video}
+        <div class='column'>
+            <div class="player">
+                <iframe webkitallowfullscreen mozallowfullscreen allowfullscreen title={title} width="100%" height="100%" src={video} frameborder="0" gesture="media" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        {/if}
+        <div class='column is-3'></div>
     </div>
 </div>
 <div class='columns'>
@@ -61,5 +84,12 @@
     .banner {
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+    .player {
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
+        /* background-color: pink; */
+        height: 300px;
     }
 </style>

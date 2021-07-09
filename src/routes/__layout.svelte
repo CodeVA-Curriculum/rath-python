@@ -6,6 +6,7 @@
 
 	import logoSrc from '$lib/assets/CodeVALogo.png';
 	import pyLogo from '$lib/assets/PythonLogo.png';
+	import NSFLogo from '$lib/assets/NSFLogo.png';
 
 	import {base} from "$app/paths";
 </script>
@@ -61,12 +62,17 @@
 	</nav>
 	<slot />
 <footer class="footer">
-	<div class="content has-text-centered">
-		<p>
-		These modules were written by <a href="https://jonstapleton.github.io/"><strong>Jon Stapleton</strong></a> on behalf of <a href="https://www.codevirginia.org/"><strong>CodeVA</strong></a>. The source code is licensed
-		<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. The website content
-		is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-		</p>
+	<div class="columns has-text-left">
+		<div class='column is-2'></div>
+		<div class='column is-narrow'>
+			<img alt="The National Science Foundational logo." src={NSFLogo} style="height: 6rem;" />
+		</div>
+		<div class='column'>
+			<p class='is-size-6'>The “Reaching Across the Hallway” project is funded by the National Science Foundation under Grant Award #2010256. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. These modules were written by <a href="https://jonstapleton.github.io/"><strong>Jon Stapleton</strong></a> on behalf of <a href="https://www.codevirginia.org/"><strong>CodeVA</strong></a>. The source code is licensed
+				<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>. The website content
+				is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.</p>
+		</div>
+		<div class='column is-2'></div>
 	</div>
 </footer>
 </main>
