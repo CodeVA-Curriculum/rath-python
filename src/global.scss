@@ -23,6 +23,10 @@ $body-overflow-y: auto;
 }
 
 code {
+    // Collides with Bulma .number badge
+    .number {
+        all:unset;
+    }
     @import './src/lib/styles/code.scss';
 }
 pre {

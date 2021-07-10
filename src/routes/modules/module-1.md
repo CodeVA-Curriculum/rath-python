@@ -2,6 +2,7 @@
 title: 1. Speaking & Listening
 description: This module introduces two fundamental tenets of computing--input & output. Every computing device or piece of software that you use can do these two things, and so our interactive narratives will need to as well.
 previous: module-0
+next: module-2
 layout: module
 video: "https://www.loom.com/embed/0439c0b6685640f4b883b7ee5024f5b7"
 activities:
@@ -198,11 +199,11 @@ Follow the instructions below to complete the hands-on component of this module:
 
 # Next Up...
 
-In the next module, you'll learn about how we can create Python programs that **remember** information they gather from users. click the button below to go to the next module!
+In the next module, you'll learn about how we can create Python programs that **remember** information they gather from users. Click the button below to go to the next module!
 
 <div class='container has-text-right'>
-    <!-- <a href="{base}/modules/module-2" class='button is-primary' disabled>Go to Module 2</a> -->
-    <button class='button is-primary' disabled>Got to Module 2</button>
+    <a href="{base}/modules/module-2" class='button is-primary'>Go to Module 2</a>
+    <!-- <button class='button is-primary' disabled>Got to Module 2</button> -->
 </div>
 
 ----

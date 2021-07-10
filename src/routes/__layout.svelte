@@ -54,6 +54,18 @@
 					<a href="{base}/modules/module-1" class="navbar-item">
 						1. Speaking & Listening
 					</a>
+					<a href="{base}/modules/module-2" class="navbar-item">
+						2. Remembering
+					</a>
+					<!-- <a href="{base}/modules/module-3" class="navbar-item">
+						3. Choosing
+					</a>
+					<a href="{base}/modules/module-4" class="navbar-item">
+						4. Organizing
+					</a>
+					<a href="{base}/modules/module-5" class="navbar-item">
+						5. Designing Interactive Narratives
+					</a> -->
 					</div>
 				</div>
 
