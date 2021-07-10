@@ -27,12 +27,12 @@
 
 <div class='prompt card my-5'>
     <div class='card-content body'>
-        <h3><span style="color: {color}"><Fa icon={icon} /></span> {title}</h3>
+        <h3><span class='{spice}-text'><Fa icon={icon} /></span> {title}</h3>
         <Markdown>
             <slot />
         </Markdown>
     </div>
-    <div class='card-footer linker' style="--color: {color}">
+    <div class='card-footer linker {spice}-background'>
         <a class='card-footer-item' href="{footerLink}">View Starter Code</a>
     </div>
 </div>
@@ -57,5 +57,29 @@
                 color: whitesmoke;
             }
         }
+    }
+    .mild-text {
+        color: #84C45A;
+    }
+    .mild-background {
+        background-color: #84C45A;
+    }
+    .medium-text {
+        color: #f2e127;
+    }
+    .medium-background {
+        background-color: #f2e127;
+    }
+    .spicy-text {
+        color: #F16D25;
+    }
+    .spicy-background {
+        background-color: #F16D25;
+    }
+    .none-text {
+        color: #323F47;
+    }
+    .none-background {
+        background-color: #323F47;
     }
 </style>
