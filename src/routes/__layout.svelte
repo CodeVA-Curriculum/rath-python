@@ -54,9 +54,9 @@
 					<a href="{base}/modules/module-1" class="navbar-item">
 						1. Speaking & Listening
 					</a>
-					<!-- <a href="{base}/modules/module-2" class="navbar-item">
+					<a href="{base}/modules/module-2" class="navbar-item">
 						2. Remembering
-					</a> -->
+					</a>
 					<!-- <a href="{base}/modules/module-3" class="navbar-item">
 						3. Choosing
 					</a>
