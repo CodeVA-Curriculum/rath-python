@@ -17,10 +17,10 @@
 </script>
 
 <div class='hero is-primary banner'>
-    <div class='columns'>
-        <div class='column is-3'></div>
-        
-        <div class='column px-5'>
+    <div class='container is-max-desktop'>
+        <!-- <div class='column is-3'></div> -->
+        <div class='columns'>
+        <div class='column mx-5'>
             <h1 class='title'>{title}</h1>
             <p class='block'>{description}</p>
             <p class='block subtitle'>In this module, you will:</p>
@@ -54,17 +54,18 @@
             </div>
         </div>
         {#if video}
-        <div class='column'>
+        <div class='column mx-5'>
             <div class="player">
                 <iframe webkitallowfullscreen mozallowfullscreen allowfullscreen title={title} width="100%" height="100%" src={video} frameborder="0" gesture="media" allow="encrypted-media"></iframe>
             </div>
         </div>
         {/if}
-        <div class='column is-3'></div>
+        </div>
+        <!-- <div class='column is-3'></div> -->
     </div>
 </div>
-<div class='columns'>
-    <div class='blog column is-6 is-offset-3 content px-5'>
+<div class='px-5'>
+    <div class='blog content container is-max-desktop'>
         <slot></slot>
     </div>
 </div>
