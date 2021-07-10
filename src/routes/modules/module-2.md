@@ -3,7 +3,7 @@ title: 2. Remember
 description: This module introduces a third big idea in computing--storage. Use variables to store data that your program can use later.
 previous: module-1
 layout: module
-video: "https://www.youtube.com/embed/7Sv-XAlBu90"
+video: "https://www.loom.com/embed/40b8754634bf4263a38b96da71c23392"
 activities:
     - 💡 Variable Basics Experiments
     - 💡 Variables with Input Experiments
@@ -30,7 +30,7 @@ When we create our interactive narratives, it will be very important for the com
 You can think of a variable being a box, with a value stored inside it. On the front of the box is a label, which is the name of our variable. Every time we use the variable name, the computer goes to the ‘box’ with that name, and retrieves the value stored inside it.
 
 <div class='container has-text-centered m-5'>
-    <img alt="Boxes with labels, like in a mailroom" src={boxesImg} width="400" style="border-radius: 10px;" />
+    <img alt="Boxes with labels, like in a mailroom" src={boxesImg} style="border-radius: 10px; max-width: 400px;" />
 </div>
 
 For example, a computer might store a person's *age* in a variable called `age_of_person`. Whenever enough time goes by, the number stored in that variable should change as the person gets older; computers are pretty good at that kind of thing. Even though the *data* stored in the computer's memory changes, the *label* on the data (`age_of_person`) doesn't change. In this way, variables *represent* data, rather than *being* data.
@@ -88,7 +88,7 @@ Try this code out in a [Repl.it](https://replit.com/~) project--You'll notice a 
 * The line where you `print()` the variable called `user_name` doesn't have any quotation marks; it's a reference to the variable name, not a string with the text "user_name" in it
 * The variable called `user_name` doesn't have any spaces--we use underscores instead. Variable names cannot contain *any* whitespace
 
-<VideoModule title="Variable Basics" video="https://www.youtube.com/embed/7Sv-XAlBu90">
+<VideoModule title="Variable Basics" video="https://www.loom.com/embed/988f01f9b3fc4378bbbfef143124fc56">
 This video covers the basics of *variables*--what they are, and how to create them using Python. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
@@ -124,7 +124,7 @@ print("You said: " + response)
 
 Using the `+` symbol between two strings causes the program to "combine" the two separate strings (in this case, `"You said: "` and `response`) into one mega-string before printing it out.
 
-<VideoModule title="Capturing User Input" video="https://www.youtube.com/embed/7Sv-XAlBu90">
+<VideoModule title="Capturing User Input" video="https://www.loom.com/embed/a50f5e6f033d48c0823f19fc4171be77">
 This video covers the basics of storing user input in variables using `input()`. This technique is *really* important for creating interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>

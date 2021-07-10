@@ -5,9 +5,12 @@
     export let title="No Title!";
     export let spice = "none";
     export let footerLink = "#";
+    let color;
     import {base} from '$app/paths';
 
     export let icon=faPepperHot;
+
+    $: color = getColor(spice);
 
     function getColor(s) {
         if(s == "mild") {
@@ -24,12 +27,12 @@
 
 <div class='prompt card my-5'>
     <div class='card-content body'>
-        <h3><span style="color: {getColor(spice)}"><Fa icon={icon} /></span> {title}</h3>
+        <h3><span style="color: {color}"><Fa icon={icon} /></span> {title}</h3>
         <Markdown>
             <slot />
         </Markdown>
     </div>
-    <div class='card-footer linker' style="--color: {getColor(spice)}">
+    <div class='card-footer linker' style="--color: {color}">
         <a class='card-footer-item' href="{footerLink}">View Starter Code</a>
     </div>
 </div>
