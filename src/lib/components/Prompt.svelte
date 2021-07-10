@@ -1,40 +1,51 @@
 <script>
     import Markdown from '$lib/components/Markdown.svelte';
     import Fa from 'svelte-fa';
-    import {faQuestion, faQuestionCircle} from '@fortawesome/free-solid-svg-icons';
+    import {faPepperHot} from '@fortawesome/free-solid-svg-icons';
     export let title="No Title!";
-    export let footerLink;
+    export let spice = "none";
+    export let footerLink = "#";
     import {base} from '$app/paths';
 
-    export let icon=faQuestionCircle;
+    export let icon=faPepperHot;
+
+    function getColor(s) {
+        if(s == "mild") {
+            return "#84C45A;" 
+        } else if(s == "medium") {
+            return "#f2e127;"
+        } else if(s == "spicy") {
+            return "#F16D25;"
+        } else {
+            return "#323F47;"
+        } 
+    }
 </script>
 
 <div class='prompt card my-5'>
     <div class='card-content body'>
-        <h3><Fa icon={icon} /> {title}</h3>
+        <h3><span style="color: {getColor(spice)}"><Fa icon={icon} /></span> {title}</h3>
         <Markdown>
             <slot />
         </Markdown>
     </div>
-    {#if footerLink}
-    <div class='card-footer linker'>
+    <div class='card-footer linker' style="--color: {getColor(spice)}">
         <a class='card-footer-item' href="{footerLink}">View Starter Code</a>
     </div>
-    {/if}
 </div>
 
 <style lang='scss'>
     @import "../styles/variables.scss";
-    .callout {
+    .prompt {
         background-color: whitesmoke;
     }
     .body {
         padding: 3rem;
     }
     .linker {
-        background-color: $green;
+        background-color: var(--color);
         :hover {
-            background: #6ca14a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.125) 0 0);
         }
         a {
             font-weight: bolder;

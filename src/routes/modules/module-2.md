@@ -4,13 +4,19 @@ description: This module introduces a third big idea in computing--storage. Use 
 previous: module-1
 layout: module
 video: "https://www.youtube.com/embed/7Sv-XAlBu90"
+activities:
+    - 💡 Variable Basics Experiments
+    - 💡 Variables with Input Experiments
+    - 🫑 Mild, Medium or Spicy Mini-Project
 ---
 
 <script>
     import Callout from '$lib/components/Callout.svelte';
     import Quote from '$lib/components/Quote.svelte';
     import VideoModule from '$lib/components/VideoModule.svelte';
+    import Prompt from '$lib/components/Prompt.svelte';
     import {faPepperHot} from '@fortawesome/free-solid-svg-icons';
+    import boxesImg from '$lib/assets/boxes.jpg';
 </script>
 
 # Backstory
@@ -23,7 +29,9 @@ When we create our interactive narratives, it will be very important for the com
 
 You can think of a variable being a box, with a value stored inside it. On the front of the box is a label, which is the name of our variable. Every time we use the variable name, the computer goes to the ‘box’ with that name, and retrieves the value stored inside it.
 
-[insert image of boxes]
+<div class='container has-text-centered m-5'>
+    <img alt="Boxes with labels, like in a mailroom" src={boxesImg} width="400" style="border-radius: 10px;" />
+</div>
 
 For example, a computer might store a person's *age* in a variable called `age_of_person`. Whenever enough time goes by, the number stored in that variable should change as the person gets older; computers are pretty good at that kind of thing. Even though the *data* stored in the computer's memory changes, the *label* on the data (`age_of_person`) doesn't change. In this way, variables *represent* data, rather than *being* data.
 
@@ -38,7 +46,7 @@ Computer variables come in different **types**, and each type stores different f
 * **Boolean:** Boolean variables only have two possible values, either `True` or `False`. Booleans are useful for variables that can only have two possibilities, such as something that is only “on” or “off.” *Examples: `True`, `False`*
 
 <Callout title="Try It Out!">
-Imagine a computer program that collects and stores information about a person. What data types fit with the following kinds of information?
+Imagine a computer program that collects and stores information about a person. For each item in the list, assign it one of the three data types described above--**string**, **integer** or **boolean**.
 
 * Name
 * Age
@@ -72,17 +80,22 @@ print(user_name) # Print the variable
 print("I am a computer")
 ```
 
-Try this code out in a [Repl.it]() project--You'll notice a couple of important things:
+The first line, the one that says `user_name = "Jon"`, is an **assignment** expression. Basically, it tells the computer to interpret the word `user_name` as if it were the string `"Jon"` in every statement following the first line.
+
+Try this code out in a [Repl.it](https://replit.com/~) project--You'll notice a couple of important things:
 
 * The first line of the program doesn't really "do" anything to the console; it's invisible to the user because it is doing an *internal* operation that only the computer knows about
 * The line where you `print()` the variable called `user_name` doesn't have any quotation marks; it's a reference to the variable name, not a string with the text "user_name" in it
 * The variable called `user_name` doesn't have any spaces--we use underscores instead. Variable names cannot contain *any* whitespace
 
 <VideoModule title="Variable Basics" video="https://www.youtube.com/embed/7Sv-XAlBu90">
+This video covers the basics of *variables*--what they are, and how to create them using Python. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
+
+<a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
 </VideoModule>
 
-<Callout title="Try It Out!">
-Edit the above program in [Repl.it](), experimenting with the following things:
+<Callout title="Variable Basics Experiments">
+Edit the code [linked here](https://replit.com/@JonStapleton1/Variable-Basics-Experiments) (don't forget to **fork** the code!), experimenting with the following things:
 
 * Find the line that says `print(user_name)`. Put `user_name` in quotation marks like you would with a normal `print()` statement. What changes?
 * Find the line that says `user_name = "Jon"`. Change `"Jon"` to something else, and run the program. What changes?
@@ -112,10 +125,13 @@ print("You said: " + response)
 Using the `+` symbol between two strings causes the program to "combine" the two separate strings (in this case, `"You said: "` and `response`) into one mega-string before printing it out.
 
 <VideoModule title="Capturing User Input" video="https://www.youtube.com/embed/7Sv-XAlBu90">
+This video covers the basics of storing user input in variables using `input()`. This technique is *really* important for creating interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
+
+<a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
 </VideoModule>
 
-<Callout title="Try It Out!">
-Copy the program below into a [Repl.it]() project:
+<Callout title="Variables with Input Experiments">
+Copy the program below into a [Repl.it](https://replit.com/~) project, or **fork** the one at [this link](https://replit.com/@JonStapleton1/Variables-and-Input-Experiments):
 
 ```python
 print("Hello! What is your name?")
@@ -135,9 +151,74 @@ Each of the following changes to the code either causes an error, or causes a ha
 
 Choose one of the mini-projects below to help you practice your skills! The projects each have a different difficulty level; **Mild** projects are pretty short and simple, **Medium** projects require a little more creativity, and **Spicy** projects are designed to be a challenge!
 
-<Prompt title="Mild: Mad Libs" footerLink="#" icon={faPepperHot}>
+<Prompt title="Mild: Echo" footerLink="https://replit.com/@JonStapleton1/Mild-Echo-Starter-Code" spice="mild">
+Imagine shouting into a vast canyon, and hearing your voice bounce back to you over and over again, decreasing in volume until it disappears . . .
+
+Make a program that simulates this poingant reminder of the ephemerality of our lives on this timeless earth. Basically, make a program that stores user input as a **string**, and then echoes back that same **string** several times before ending the program. You could even include a rich, vivid description of the "place" the user finds themselves which would create such an echo in a `print()` statement at the beginning of the program.
+
+Click the button below to check out the [starter code](https://replit.com/@JonStapleton1/Mild-Echo-Starter-Code)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
+
+<Prompt title="Medium: Mad Libs" footerLink="https://replit.com/@JonStapleton1/Medium-Mad-Lib-Starter-Code" spice="medium">
+"Mad Libs" are word games that invite the player to provide words to complete a story, without knowing what the story is about or how the words will be used in context. For example, I might say:
+
+```python
+print("Type in a adjective (a complimentary one, please)")
+```
+
+Then, I would use whatever you said in a sentence:
+
+```python
+print("You are very " + user_input + "!")
+```
+
+Lots of times, these "Mad Libs" tell a story and include many different words provided by the user. The best ones try to "trick" the player into providing silly or nonsensical words.
+
+For this project, you will create a "Mad Libs" game for the user to play. The program should ask the user for several different words, store those words in several different **variables**, and then use those variables in a `print()` statement such that the users' words are inserted into a story.
+
+Click the button below to check out the [starter code](https://replit.com/@JonStapleton1/Medium-Mad-Lib-Starter-Code)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+</Prompt>
+
+<Prompt title="Spicy: Single-Function Calculator" footerLink="https://replit.com/@JonStapleton1/Spicy-Single-Function-Calculator-Starter-Code" spice="spicy">
+In the module above, we only made variables that stored user input as **strings**. You can also create **integer** variables by using this code pattern:
+
+```python
+print("Type in a number")
+num = int(input()) # store input as an integer
+print(num + 1) # output the sum of the input and 5
+```
+
+For this project, you will create a single-function calculator. The program should take **two** integers from the user via `input()`, store the two numbers in two different **variables**, and then print out the result of the calculator's "single function". You can choose whichever operation you like--addition or subtraction are pretty easy, but you can go harder if you'd like (Pythagorean Theorem?).
+
+Click the button below to check out the [starter code](https://replit.com/@JonStapleton1/Spicy-Single-Function-Calculator-Starter-Code)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+</Prompt>
+
+<div class='card my-5'>
+    <div class='card-content'>
+        <h3>OpenClass AI Practice Questions</h3>
+        <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master using variables with Python.</p>
+    </div>
+    <div class='card-footer'>
+        <a href="https://codeva.openclass.ai/resource/assignment-60e9d1a3cae76b4882fa02d5?code=rJC5sjpOtNLoUg" class="card-footer-item">View Practice Questions</a>
+    </div>
+</div>
 
 # Catalyzing Questions
 
-* What happens when you use the same variable to store different kinds of data?
+* What happens when you re-use a variable name? Is that okay to do, or is that a mistake?
+* What are some conceptual hurdles students might have trouble with when they start working with variables?
+* Which is more difficult--learning the **syntax** for variables, or learning the *idea* or concept of what a variable does and/or represents?
+* Can you think of ways to adapt one or more of the above prompts to a class that you teach?
+
+----
+
+# Next Up...
+
+In the next module, you'll learn about how to create Python programs that make **choices** based on the value of information they gather from users and store in **variables**. Click the button below to go to the next module!
+
+<div class='container has-text-right'>
+    <!-- <a href="{base}/modules/module-2" class='button is-primary' disabled>Go to Module 2</a> -->
+    <button class='button is-primary' disabled>Got to Module 3</button>
+</div>
+
+----
