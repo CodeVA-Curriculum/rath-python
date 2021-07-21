@@ -9,41 +9,182 @@ activities:
     - 🫑 Mild, Medium or Spicy Mini-Project
 ---
 
+
+<script>
+    import Callout from '$lib/components/Callout.svelte';
+    import VideoModule from '$lib/components/VideoModule.svelte';
+    import Prompt from '$lib/components/Prompt.svelte';
+    import {faPepperHot} from '@fortawesome/free-solid-svg-icons';
+</script>
+
 # Backstory
 
-How do programs make decisions? Your music streaming service knows that if you press the pause button, then the music should pause. Programming if statements such as these are a foundational part of building programs that respond to user input or changing information. The if statement checks if a certain condition is `True` or `False`. This way the program knows what to do next, if a certain condition is met. Today we will learn how to program if/else statements within Python, and how to develop the logic that guides them, opening up a world of programming possibilities!
+How do programs make decisions? Your music streaming service knows that *if* you press the pause button, then the music should pause. Programming if statements such as these are a foundational part of building programs that respond to user input or changing information. The if statement checks if a certain condition is `True` or `False`. Then, based on the `True` or `False`-ness of that condition, it runs different sections of code. This way the program can choose what to do next, if a certain condition is met.
+
+You might express this sort of "branching" narrative using a flowchart:
+
+[embed flowchart]
+
+Python has a different way of expressing branches and choices in the code; we can't write flowcharts in Python, but the idea is exactly the same. Check out the program embedded below:
+
+[embed some code example that is a simple "if" statement]
+
+Run it a couple of times, and try typing in different inputs each time. The program does *not* `print()` the same value every time; in fact, it seems like the program can choose what to `print()` based on what you type! Now check out this program:
+
+[embed simple story]
+
+This is the simplest version of a "choose-your-own-adventure" game that I can think of. There's a little bit of description, then the reader needs to type in a choice. The program prints out an ending to the story based on the choice the user made.
+
+Pretty much every kind of software uses this exact same process. Have you ever accidentally entered the wrong password into your phone? The phone's software checks the **input** you provide via the keypad, and gives you a different response based on what you typed. This kind of interactivity is possible because of **conditional statements** (also called **if statements**). Every single programming language out there has a way for people to write these sorts of procedures, where the program chooses one of two (or more) responses based on what the user does. In this module, you'll learn how to do write **conditional statements** with Python.
 
 # If Statements
 
-Now that we’ve learned how to handle variables and input in Python, how do we get our code to make decisions? Decision-making is a core part of programs. We want our creations to be able to respond to different inputs, so that if you hit one button on your controller, your video game knows to make your character jump, and if you press another button your character will crouch. We’ve learned how these decisions are made on the hardware of computer chips, using logic gates and electrical signals to turn bits on and off. But how do we make decisions on the programming language level?
+The following Python program shows what an "if" statement looks like in action:
 
-The most basic and essential decision making tool we use is called if/else statements. These statements say that if a condition is met, then certain code will be run. Else, if the condition is not met, a separate set of code will be run. The statement that follows the if is called a conditional statement. If the conditional statement is True, the code in the if block of code will be executed. Otherwise, the code in the else block of code will be executed. This may seem simple, but this is a major building block of coding decisions into our programs. Let’s consider pseudocode for an example. How could we tell a user if they are old enough to vote?
+```python
+print("The beginning...")
 
-Ask the user “How old are you?” and store the response in variable age
-If age is greater than or equal to 18
-Print “You are old enough to vote.”
+if True:
+    print("Option 1")
 
-\* INPUT age
-\* IF age > = 18
-\*     PRINT “You are old enough to vote.”
+print("The End!")
+```
 
-The way this code is written, there is only an output when the person’s age is greater than or equal to 18. It is perfectly valid to write if statements this way, if there is only a reaction needed by the computer when the condition is true. But if we also wanted to let the user know they are not old enough to vote if they are under 18, we will want to add an else statement as well.
+The first line is just a `print()` statement like we've been using for a while now; it's nothing special. The last line is the same--just a normal `print()` statement. The two lines in the *middle* are the important parts. First, you can see the `if True:` line; this is the beginning of our "if" statement pattern. The `if` line is paired with a `print()` statement indented below it; this is the second part of our pattern. **All "if" statements will follow this pattern**, or some variation of it.
 
-Ask the user “How old are you?” and store the response in variable age
-If age is greater than or equal to 18
-Print “You are old enough to vote.”
-Else
-Print “You are not yet old enough to vote.”
+The format of the "if" statement is really important! The colon at the end of the `if True:` line needs to be there, and the line *after* the "if" statement **must** be indented, otherwise the code will give you an error message when you try to run it. Lastly, you *must* capitalize the `True` or `False` value!
 
-\* INPUT age
-\* IF age > = 18
-\*     PRINT “You are old enough to vote.”
-\*ELSE
-\*    PRINT “You are not yet old enough to vote.”
+<Callout title="Simple 'If' Experiments">
+Edit the code [linked here]() (don't forget to **fork** the code!), experimenting with the following things:
 
-We could chart the results of this program using various input, much like when we developed truth tables. The key mechanism of these statements is that if the condition after if is True, then the code indented following the if is run. If the condition is False, then the code indented following the else is run. Complete the following table with the values expected for the given input.
+* Run the code. What **output** does the code create?
+* Find the line that says `if True:` and change `True` to `False`. Run the code; what changes?
+* Create a second "if" statement starting just before the line that says `print("The End!")`. Use the "if" statement already in the code as a model, paying special attention to the spacing and the details. Choose either `True` or `False` for your new "if" statement. Before you run the code, try to predict what output the code will create.
+
+</Callout>
+
+There are lots of variations on "if" statements to try out. The one you experimented with above is the simplest version. Here's how it works:
+
+1. The program runs normally until the computer reads the line that starts with `if`
+2. The program checks after the `if` to see if the value there is either `True` or `False`
+3. If the value is `True`, the program executes the line indented under the `if` line
+4. If the value is `False`, the program *skips* the line indented under the `if` line
+
+There's a slightly more complicated version to try out, the "if-else" statement. In this version, the code doesn't decide whether or not to *skip* a line; it chooses between two options **based on the `True` or `False` value**.
+
+```python
+print("The beginning...")
+
+if True:
+    print("Option 1")
+else:
+    print("Option 2")
+
+print("The End!")
+```
+
+<Callout title="Simple 'If-Else' Experiments">
+Edit the code [linked here]() (don't forget to **fork** the code!), experimenting with the following things:
+
+* Run the code. What **output** does the code create?
+* Find the line that says `if True:` and change `True` to `False`. Run the code; what changes? (Read the output carefully!)
+* Add another line of code under the line that says `print("Option 1")`, being sure that it is indented in the same way as the `"Option 1"` line. Run the code twice, once with `True` and once with `False`. What d
+o you notice?
+
+</Callout>
+
+<!-- Video module -->
+
+# Boolean Expressions
+
+The `True` and `False` values are the most important parts of our "if" statements; the code **chooses** different code sequences based on it. These values are **Boolean** data, named after George Boole. You may remember **Boolean** as one of the data types from the "variables" module. "If" statements become very powerful when you start using them in conjunction with **Boolean expressions**; that's what this section is all about.
+
+Consider the following Python program:
+
+```python
+print(5 > 2)
+```
+
+This program is written with a **Boolean expression**--`5 > 2`. Boolean expressions are sort of like mathematical expressions; the program will *simplify* the expression before printing it out. Boolean expressions are *unlike* mathematical expressions in that they don't simplify down to a number; instead, the simplify down to a value of either `True` or `False`. Which value will the program above create when it prints the Boolean expression?
+
+<!-- Video module -->
+
+<Callout title="Boolean Experiments">
+Edit the code [linked here]() (don't forget to **fork** the code!), experimenting with the following things:
+
+* Run the code. What **output** does the code create?
+* Edit the code so it outputs the following:
+
+```
+True
+False
+True
+False
+```
+
+</Callout>
 
 # Interactive Stories
 
-## Secret Variables, Hidden Consequences
+Let's finally bring everything together! Consider the following code pattern:
 
+```python
+print("You see a worn, wooden door in front of you. Do you OPEN it?")
+answer = input()
+
+if answer == "OPEN":
+    print("You see a dark passageway before you...")
+else:
+    print("You stand alone in the darkness...")
+
+print("The End!")
+```
+
+There's one big difference between this "if" statement and the ones you have seen thus far--instead of using `True` or `False`, it uses a **Boolean expression**. When the variable called `answer` has the same value as `"OPEN"`, the story continues. If not, the program prints `"You stand alone in the darkness..."`. Spooky!
+
+This story is pretty short, though. Here's how we might continue it:
+
+```python
+print("You see a worn, wooden door in front of you. Do you OPEN it?")
+answer = input()
+
+if answer == "OPEN":
+    print("You see a dark passageway before you...")
+    print("It's too dark to see. Do you want to turn on a FLASHLIGHT, or WALK?")
+    answer = input()
+
+    if answer == "FLASHLIGHT":
+        print("The hallway has a large hole in the floor! You carefully step around it.")
+    elif answer == "WALK":
+        print("You take careful steps forward, and suddenly you fall through the floor!")
+    else:
+        print("That's not an option.")
+        print("You stand alone in the darkness...")
+else:
+    print("You stand alone in the darkness...")
+
+print("The End!")
+```
+
+We call this pattern a *nested "if" statement*. You can add **as much code as you want** to the paths of an "if" statement. Be careful though! As your story gets longer, it gets more and more difficult to read and add to. The **cognitive load** that you as a programmer have to deal with gets larger and larger as you add layers to your "if" statements.
+
+You also may have noticed a strange "if" statement pattern in that previous example:
+
+```python
+if answer == "FLASHLIGHT":
+    print("The hallway has a large hole in the floor! You carefully step around it.")
+elif answer == "WALK":
+    print("You take careful steps forward, and suddenly you fall through the floor!")
+else:
+    print("That's not an option.")
+    print("You stand alone in the darkness...")
+```
+
+This "if" statement pattern has *three* options instead of just two. The line that says `elif` stands for "else if", meaning that the code will check each Boolean expression in order. When the code finds a `True` expression, it runs the section of code indented beneath and skips the rest.
+
+<!-- Video module -->
+
+<Callout title="Interactive Story Experiments">
+Edit the code [linked here]() (don't forget to **fork** the code!), experimenting with the following things:
+
+</Callout>
