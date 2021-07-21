@@ -218,8 +218,7 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
 In the next module, you'll learn about how to create Python programs that make **choices** based on the value of information they gather from users and store in **variables**. Click the button below to go to the next module!
 
 <div class='container has-text-right'>
-    <a href="{base}/modules/module-3" class='button is-primary' disabled>Go to Module 3</a>
-    <!-- <button class='button is-primary' disabled>Got to Module 3</button> -->
+    <a href="{base}/modules/module-3" class='button is-primary'>Go to Module 3</a>
 </div>
 
 ----

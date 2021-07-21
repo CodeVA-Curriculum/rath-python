@@ -187,4 +187,56 @@ This "if" statement pattern has *three* options instead of just two. The line th
 <Callout title="Interactive Story Experiments">
 Edit the code [linked here]() (don't forget to **fork** the code!), experimenting with the following things:
 
+* lorum ipsum
+* lorum ipsum
+* lorum ipsum
+
 </Callout>
+
+# "If" Statement Mini-Projects
+
+<Prompt title="Mild: Name" footerLink="#" spice="mild">
+[description]
+
+Click the button below to check out the [starter code]()! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+</Prompt>
+
+<Prompt title="Medium: Name" footerLink="#" spice="medium">
+[description]
+
+Click the button below to check out the [starter code]()! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+</Prompt>
+
+<Prompt title="Spicy: Name" footerLink="#" spice="spicy">
+[description]
+
+Click the button below to check out the [starter code]()! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+</Prompt>
+
+<div class='card my-5'>
+    <div class='card-content'>
+        <h3>OpenClass AI Practice Questions</h3>
+        <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master using "if" statements with Python.</p>
+    </div>
+    <div class='card-footer'>
+        <a href="#" class="card-footer-item">View Practice Questions</a>
+    </div>
+</div>
+
+# Catalyzing Questions
+
+* something
+* something
+
+----
+
+# Next Up...
+
+In the next module, you'll learn about how to organize your interactive stories into chapters or "scenes" using functions. Click the button below to go to the next module!
+
+<div class='container has-text-right'>
+    <!-- <a href="{base}/modules/module-3" class='button is-primary'>Go to Module 4</a> -->
+    <button class='button is-primary' disabled>Got to Module 3</button>
+</div>
+
+----
