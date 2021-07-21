@@ -182,33 +182,39 @@ else:
 
 This "if" statement pattern has *three* options instead of just two. The line that says `elif` stands for "else if", meaning that the code will check each Boolean expression in order. When the code finds a `True` expression, it runs the section of code indented beneath and skips the rest.
 
+Your interactive narrative will *mostly* consistent of these "if" statement patterns, so it's a good idea to get familiar. Try out the experiment below to acquaint yourself!
+
 <!-- Video module -->
 
 <Callout title="Interactive Story Experiments">
 Edit the code [linked here]() (don't forget to **fork** the code!), experimenting with the following things:
 
-* lorum ipsum
-* lorum ipsum
-* lorum ipsum
+* Run the code. How many different endings does this story have?
+* Try changing something about the story by editing the **strings** inside the `print()` statements and "if" statements such that the story is slightly different. For example, you could change the description that program `print()`s at the beginning, and then change one of the choices available to the user
+* Add another ending to the story by creating another `elif` section before the `else` section. You can use this code as an example:
+
+```python
+[add example]
+```
 
 </Callout>
 
 # "If" Statement Mini-Projects
 
-<Prompt title="Mild: Name" footerLink="#" spice="mild">
-[description]
+<Prompt title="Mild: Goldilocks" footerLink="#" spice="mild">
+The code example linked below tries to tell the story of *Goldilocks and the Three Bears*, but the options aren't working properly. Edit the `if` and `elif` statements so the code runs properly.
 
 Click the button below to check out the [starter code]()! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
-<Prompt title="Medium: Name" footerLink="#" spice="medium">
-[description]
+<Prompt title="Medium: Secret Ending" footerLink="#" spice="medium">
+The code example linked below only has one ending! The story is pretty good, but it's not really interactive. Replace `True` and `False` wherever you see it with Boolean expressions that include the `answer` variable, so the reader of the story can choose one of several endings.
 
 Click the button below to check out the [starter code]()! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
-<Prompt title="Spicy: Name" footerLink="#" spice="spicy">
-[description]
+<Prompt title="Spicy: Act 2" footerLink="#" spice="spicy">
+The code example linked below is interactive, but it's too short! Add one more choice to either section of the `if` statement, so the user has to make two choices no matter which option they choose at the beginning of the story (Hint: you'll need to create a *nested `if` statement*).
 
 Click the button below to check out the [starter code]()! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
@@ -225,8 +231,9 @@ Click the button below to check out the [starter code]()! Remember to **fork** t
 
 # Catalyzing Questions
 
-* something
-* something
+* What other kinds of programs could you create using `input()`, `print()`, variables, and `if` statements?
+* What are some barriers to understanding that you imagine students might encounter when they begin working with `if` statements?
+* Did you have difficulty writing `if` statements at first? What are some common mistakes you would warn someone about if they were doing this for the first time?
 
 ----
 
