@@ -18,6 +18,7 @@ activities:
     import Prompt from '$lib/components/Prompt.svelte';
     import {faPepperHot} from '@fortawesome/free-solid-svg-icons';
     import boxesImg from '$lib/assets/boxes.jpg';
+    import {base} from '$app/paths';
 </script>
 
 # Backstory

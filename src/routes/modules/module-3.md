@@ -18,6 +18,7 @@ activities:
     import Prompt from '$lib/components/Prompt.svelte';
     import flowchart from '$lib/assets/Module3Flowchart.png';
     import ReplitEmbed from '$lib/components/ReplitEmbed.svelte';
+    import {base} from '$app/paths';
 </script>
 
 # Backstory
