@@ -291,15 +291,15 @@ The code example linked below is interactive, but it's too short! Add one more c
 Click the button below to check out the [starter code](https://replit.com/@JonStapleton1/Spicy-Starter-Code)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
-<!-- <div class='card my-5'>
+<div class='card my-5'>
     <div class='card-content'>
         <h3>OpenClass AI Practice Questions</h3>
         <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master using "if" statements with Python.</p>
     </div>
     <div class='card-footer'>
-        <a href="#" class="card-footer-item">View Practice Questions</a>
+        <a href="https://codeva.openclass.ai/resource/assignment-60fadd99c76354e3a79422f3?code=XR00qOSPgvRiLw" class="card-footer-item">View Practice Questions</a>
     </div>
-</div> -->
+</div>
 
 # Catalyzing Questions
 
