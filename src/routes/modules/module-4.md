@@ -15,7 +15,6 @@ activities:
     import Callout from '$lib/components/Callout.svelte';
     import VideoModule from '$lib/components/VideoModule.svelte';
     import Prompt from '$lib/components/Prompt.svelte';
-    import flowchart from '$lib/assets/Module3Flowchart.png';
     import ReplitEmbed from '$lib/components/ReplitEmbed.svelte';
     import {base} from '$app/paths';
     import Steps from '$lib/components/Steps.svelte';
@@ -196,16 +195,18 @@ This video covers the basics of defining and using **functions** with Python. Th
 </VideoModule>
 
 <Callout title="Basic Function Experiments">
-Consider the output below:
-<!-- TODO: -->
-```
-repeated output, like from a song
-```
+The program [linked here]() contains some function definitions, but only one function call. The program is incomplete; call the appropriate functions in the correct order so the program outputs the lyrics to [song](). **Fork** the code [linked here]() to get started. Your program should produce the output below when you are finished:
 
-How might you use **functions** to write a program that generates the output above? Use the Repl.it linked [here]() as a starting point (don't forget to **fork** the code!), and follow the instructions below:
-<!-- TODO: -->
-1. 
-
+```
+Hey Jude
+don't make it bad. Take a sad song, and make it better
+Remember to let her into your heart, then you can start
+to make it better
+Na, na, na
+na-na-na-na
+na-na-na-na
+Hey Jude
+```
 </Callout>
 
 # Using Functions for Scenes
@@ -240,14 +241,14 @@ Each "scene" function has a couple of different parts:
 
 ```python
 def scene1():
-    print("Lorum ipsum")
-    print("sit dolor amet")
+    print("You find yourself in a dark, musty cave")
+    print("Will you EXPLORE or DEPART?")
     # check which path the user chose
     answer = input() # get user input
-    if answer == "Lorum":
-        print("ipsum")
-    elif answer == "sit":
-        print("dolor")
+    if answer == "EXPLORE":
+        print("You become lost in the dark")
+    elif answer == "DEPART":
+        print("You step out into the light")
     else:
         print("That's not an option")
 ```
@@ -258,23 +259,24 @@ def scene1():
 <span slot="text">
 The scene in the function called `scene1()` has three possible paths for the user to take:
 
-1. Lorum ipsum
-2. sit dolor
-3. `"That's not an option"`, which will run if the reader types something other than `"Lorum"` or `"sit"`.
+1. EXPLORE the cave
+2. DEPART the cave
+3. `"That's not an option"`, which will run if the reader types something other than `"EXPLORE"` or `"DEPART"`.
 
-Each of these paths will lead to different scenes--"Lorum" leads to "Scene 2" according to our flowchart, while "sit" leads to "Scene 3". If the reader doesn't select one of these two options, we can just restart "Scene 1" to give them another chance to answer.
+Each of these paths will lead to different scenes--"EXPLORE" leads to "Scene 2" according to our flowchart, while "DEPART" leads to "Scene 3". If the reader doesn't select one of these two options, we can just restart "Scene 1" to give them another chance to answer.
 
-Create new functions for `scene2` and `scene3`.
+Next, create new functions for `scene2` and `scene3`.
 </span>
 <span slot="code">
 
 ```python
 def scene1():
-    # collapsed to make room
-    # ...
+    print("You find yourself...")
+    # collapsed to make room...
 
 def scene2():
     print("Welcome to scene 2!")
+    # no "if" statement yet...
 
 def scene3():
     print("Welcome to scene 3!")
@@ -289,8 +291,8 @@ Next, we will connect each path in the scene to another scene. Basically, we wan
 
 In `scene1()`, we made three possible paths:
 
-1. Lorum ipsum, which leads to `scene2()`
-2. sit dolor, which leads to `scene3()`
+1. `"EXPLORE"`, which leads to `scene2()`
+2. `"DEPART"` which leads to `scene3()`
 3. `"That's not an option"`, which leads back to `scene1()`
 
 To connect these paths to new scenes, call the function associated with the scene that should start given each input from the reader.
@@ -299,24 +301,50 @@ To connect these paths to new scenes, call the function associated with the scen
 
 ```python
 def scene1():
-    print("Lorum ipsum")
-    print("sit dolor amet")
+    print("You find yourself in a dark, musty cave")
+    print("Will you EXPLORE or DEPART?")
+    # check which path the user chose
     answer = input() # get user input
-    # check which path the reader chose
-    if answer == "Lorum":
-        print("ipsum")
-        scene2() # new code! run scene2
-    elif answer == "sit":
-        print("dolor")
-        scene3() # new code! run scene3
+    if answer == "EXPLORE":
+        print("You become lost in the dark")
+        scene2()
+    elif answer == "DEPART":
+        print("You step out into the light")
+        scene3()
     else:
         print("That's not an option")
-        scene1() # new code! Restart scene1
 ```
 </span>
 </Steps>
 
-To expand the story, all you have to do is add `if` statements to `scene2()` and `scene3()`, along with more scenes to connect to. I've expanded the story I started above into a more-or-less playable interactive narrative. Play with the [Repl.it]() embedded below to get a sense of what it's like to interact with a story organized into functions this way. Definitely check out the code as well to see how things are organized!
+<Steps title="4: Activate the First Scene">
+<span slot='text'>
+
+Because `scene1()` leads to all the other scenes, we don't need to include any other function calls. The `scene1()` call after all the function definitions starts sort of a chain reaction, where the process inside each function definition contains the calls to all subsequent scenes in the story.
+</span>
+<span slot='code'>
+
+```python
+# functions, collapsed to make room
+def scene1():
+    print("You find yourself...")
+    # etc.
+
+def scene2():
+    print("Welcome to scene 2!")
+    # etc.
+
+def scene3():
+    print("Welcome to scene 3!")
+    # etc.
+
+# main program -------
+scene1() # activate scene 1
+```
+</span>
+</Steps>
+
+To expand the story, all you have to do is add `if` statements to `scene2()` and `scene3()`, along with more scenes to connect to. I've expanded the story I started above into a more-or-less playable interactive narrative. Play with the [Repl.it]() embedded below to get a sense of what it's like to interact with a story organized into functions this way. Definitely check out the code as well to see how things are organized! If you're interested in extending this example, you can **fork** it from [this link]().
 
 <!-- TODO: Create Repl.it -->
 <!-- <ReplitEmbed url="#" /> -->
@@ -361,10 +389,12 @@ Lorum ipsum sit dolor amet
     </div>
 </div>
 
-<!-- TODO: Write catalyzing questions -->
 # Catalyzing Questions
 
-* Lorum ipsum
+* What are some ways to help students organize complicated interactive narratives into scenes (especially away from the computer)?
+* Can you think of any limitations the scene-as-function pattern creates for people creating stories?
+* How might you help students move away from linear Python programs toward programs decomposed into functions?
+* Are there other ways to engage students in decomposition outside of creating interactive narratives?
 
 ----
 
