@@ -90,7 +90,7 @@ print("Thanks for listening!")
 
 To demonstrate how **functions** work, I'm going to *refactor* this code so the lines corresponding to the song lyrics are organized into a function. Here's how that works:
 
-<Steps title="Step 1: Create Function Definition">
+<Steps title="1: Create Function Definition">
 <span slot="text">
 The first step is to create the **function definition** area at the top of the code. Here are the steps:
 
@@ -119,7 +119,7 @@ print("Thanks for listening!")
 </span>
 </Steps>
 
-<Steps title="Step 2: Write the Function Process">
+<Steps title="2: Write the Function Process">
 <span slot="text">
 Next, I need to define the *process* that will go with the `song()` function. Any code indented beneath the function **definition** line will get mapped to the `song()` keyword.
 
@@ -145,7 +145,7 @@ print("Thanks for listening!")
 </span>
 </Steps>
 
-<Steps title="Step 3: Activate the Function">
+<Steps title="3: Activate the Function">
 <span slot="text">
 If you run code at this stage, you'll notice something interesting. The code indented below the function definition line *doesn't happen*. It's like our function definition code doesn't work anymore!
 
@@ -210,9 +210,120 @@ How might you use **functions** to write a program that generates the output abo
 
 # Using Functions for Scenes
 
+So how could functions help with organizing interactive narratives? There are a lot of possible ways to use functions (they're a pretty flexible programming tool), but one way is to create *scenes* within functions, and then to chain those scenes together to weave the interactive narrative. "Scenes" aren't Python concepts--they are a method of organization, a way of thinking about how to break down the problem of telling stories that have multiple paths toward multiple endings. A scene has:
+
+* A description, where the reader learns about what is happening in that part of the story and what options they have for interacting with the narrative
+* A choice, where the reader types in a command to interact with the story
+* Two or more paths that lead to other scenes
+
+You can think about an interactive narrative not as a book with different endings that you read front-to-back, but as a network of "scenes" connected together. For example, here's a network of scenes represented by a flowchart for the story [insert story name]():
+
+<!-- TODO: add flowchart -->
+[flowchart]
+
+To create this story using Python, you could make each "scene" its own function and connect them together through the reader's choices. Here's an example:
+
+<Steps title="1: Create the First Scene">
+<span slot="text">
+First, you'll need to create a scene to start the story off. Check out the example.
+
+Each "scene" function has a couple of different parts:
+
+1. A function definition line, where we need to name the scene
+2. A `print()` statement, where we describe what's going on in the scene
+3. A `print()` statement that shows the reader what options they have for interacting with the story
+4. An `if` statement, with a section for each path out of the scene
+
+</span>
+<!-- TODO: Write code -->
+<span slot="code">
+
+```python
+def scene1():
+    print("Lorum ipsum")
+    print("sit dolor amet")
+    # check which path the user chose
+    answer = input() # get user input
+    if answer == "Lorum":
+        print("ipsum")
+    elif answer == "sit":
+        print("dolor")
+    else:
+        print("That's not an option")
+```
+</span>
+</Steps>
+
+<Steps title="2: Create Destinations">
+<span slot="text">
+The scene in the function called `scene1()` has three possible paths for the user to take:
+
+1. Lorum ipsum
+2. sit dolor
+3. `"That's not an option"`, which will run if the reader types something other than `"Lorum"` or `"sit"`.
+
+Each of these paths will lead to different scenes--"Lorum" leads to "Scene 2" according to our flowchart, while "sit" leads to "Scene 3". If the reader doesn't select one of these two options, we can just restart "Scene 1" to give them another chance to answer.
+
+Create new functions for `scene2` and `scene3`.
+</span>
+<span slot="code">
+
+```python
+def scene1():
+    # collapsed to make room
+    # ...
+
+def scene2():
+    print("Welcome to scene 2!")
+
+def scene3():
+    print("Welcome to scene 3!")
+    # no "if" statement yet...
+```
+</span>
+</Steps>
+
+<Steps title="3: Create Connections">
+<span slot="text">
+Next, we will connect each path in the scene to another scene. Basically, we want to run the code for different scenes based on the choice the reader made in `scene1()`. 
+
+In `scene1()`, we made three possible paths:
+
+1. Lorum ipsum, which leads to `scene2()`
+2. sit dolor, which leads to `scene3()`
+3. `"That's not an option"`, which leads back to `scene1()`
+
+To connect these paths to new scenes, call the function associated with the scene that should start given each input from the reader.
+</span>
+<span slot="code">
+
+```python
+def scene1():
+    print("Lorum ipsum")
+    print("sit dolor amet")
+    answer = input() # get user input
+    # check which path the reader chose
+    if answer == "Lorum":
+        print("ipsum")
+        scene2() # new code! run scene2
+    elif answer == "sit":
+        print("dolor")
+        scene3() # new code! run scene3
+    else:
+        print("That's not an option")
+        scene1() # new code! Restart scene1
+```
+</span>
+</Steps>
+
+To expand the story, all you have to do is add `if` statements to `scene2()` and `scene3()`, along with more scenes to connect to. I've expanded the story I started above into a more-or-less playable interactive narrative. Play with the [Repl.it]() embedded below to get a sense of what it's like to interact with a story organized into functions this way. Definitely check out the code as well to see how things are organized!
+
+<!-- TODO: Create Repl.it -->
+<!-- <ReplitEmbed url="#" /> -->
+
 <!-- TODO: Record and link video -->
-<VideoModule title="Functions as Scenes Experiments" video="https://www.youtube.com/embed/ZTnb83NxPi4">
-This video covers how to use **functions** to organize an interactive narrative around *scenes*. You'll use this pattern a lot when you create your own interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
+<VideoModule title="Functions as Scenes" video="https://www.youtube.com/embed/ZTnb83NxPi4">
+This video covers how to use *functions* to organize an interactive narrative around *scenes*. You'll use this pattern a lot when you create your own interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
 </VideoModule>
@@ -221,8 +332,6 @@ This video covers how to use **functions** to organize an interactive narrative 
 <Callout title="Functions as Scenes Experiments">
 Lorum ipsum sit dolor amet
 </Callout>
-
-# Organizing Functions into Files (Optional)
 
 # Functions Mini-Projects
 
