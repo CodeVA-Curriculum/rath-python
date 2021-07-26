@@ -12,7 +12,53 @@ activities:
 
 # Backstory
 
-[something something if statements can be bad, nesting, diagonal code pattern of death]
+At this point, you know a lot about how to create interactive narratives. You may have even tried to create interactive stories using just `if` statements, variables, and `input()`, which is great! It's totally possible to create some amazing stories using just those simple tools. However, you might notice that things get pretty complicated pretty quickly. Consider the program below:
+
+```python
+print("You see a dusty hallway ahead. Will you EXPLORE, or LISTEN?")
+answer = input()
+
+if answer == "EXPLORE":
+    print("You find a trap door hidden beneath an old, moldy carpet.")
+elif answer == "LISTEN":
+    print("You just hear the creaking of the old house")
+else:
+    print("That's not an option")
+```
+
+This is a pretty short story; it barely rises to the level of an interactive narrative at all! The problem is, if we try to add more to the story, the program gets pretty difficult to read and make changes to. For example, we might want to have the reader make another choice after they find the trap door. To accomplish this, you'd have to add another `if` statement to the `"EXPLORE"` path:
+
+```python
+# ...
+if answer == "EXPLORE":
+    print("You find a trap door hidden beneath an old, moldy carpet.")
+    print("Will you OPEN the door, or KNOCK?")
+    answer = input()
+
+    if answer == "OPEN":
+        print("You see a dark passageway below.")
+    elif answer == "KNOCK":
+        print("You hear someone approach the trapdoor...")
+    else:
+        print("That's not an option")
+elif answer == "LISTEN":
+    print("You just hear the creaking of the old house")
+else:
+    print("That's not an option")
+```
+
+By nesting the `if` statements, we can create longer "branches" in the story. The problem is, the more nested `if` statements we add, the more complicated the code becomes! We will eventually end up with a "diagonal" code pattern:
+
+```python
+if answer =="A":
+    if answer == "B":
+        if answer == "C":
+            # etc...
+```
+
+This sort of "diagonal" code is okay for beginners, but unless we figure out a different way to organize the code that makes up the story, things will get too complicated and difficult to manage as we add to the story. Not to mention that nested `if` statements are a little confusing to read!
+
+This module is about **functions**. We will use functions to solve the problem of nested `if` statements in our interactive narratives. By creating functions, we can organize our story into *scenes*, allowing us to freely add new parts to the story without having to create many nested `if` statements. This is the last coding concept you will need to learn in order to make interactive narratives with Python!
 
 # Functions
 
