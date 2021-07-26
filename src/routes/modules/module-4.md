@@ -188,6 +188,13 @@ song() # and again...
 print("Thanks for listening!")
 ```
 
+<!-- TODO: Record video and link -->
+<VideoModule title="Functions Basics" video="https://www.youtube.com/embed/ZTnb83NxPi4">
+This video covers the basics of defining and using **functions** with Python. This technique is *really* important for creating interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
+
+<a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
+</VideoModule>
+
 <Callout title="Basic Function Experiments">
 Consider the output below:
 <!-- TODO: -->
@@ -203,6 +210,13 @@ How might you use **functions** to write a program that generates the output abo
 
 # Using Functions for Scenes
 
+<!-- TODO: Record and link video -->
+<VideoModule title="Functions as Scenes Experiments" video="https://www.youtube.com/embed/ZTnb83NxPi4">
+This video covers how to use **functions** to organize an interactive narrative around *scenes*. You'll use this pattern a lot when you create your own interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
+
+<a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
+</VideoModule>
+
 <!-- TODO: -->
 <Callout title="Functions as Scenes Experiments">
 Lorum ipsum sit dolor amet
@@ -217,10 +231,12 @@ Lorum ipsum sit dolor amet
 Lorum ipsum sit dolor amet
 </Prompt>
 
+<!-- TODO: Write prompt, create starter code -->
 <Prompt title="Medium: Name" footerLink="#" spice="medium">
 Lorum ipsum sit dolor amet
 </Prompt>
 
+<!-- TODO: Write prompt, create starter code -->
 <Prompt title="Spicy: Name" footerLink="#" spice="spicy">
 Lorum ipsum sit dolor amet
 </Prompt>
@@ -236,11 +252,10 @@ Lorum ipsum sit dolor amet
     </div>
 </div>
 
+<!-- TODO: Write catalyzing questions -->
 # Catalyzing Questions
 
-* What other kinds of programs could you create using `input()`, `print()`, variables, and `if` statements?
-* What are some barriers to understanding that you imagine students might encounter when they begin working with `if` statements?
-* Did you have difficulty writing `if` statements at first? What are some common mistakes you would warn someone about if they were doing this for the first time?
+* Lorum ipsum
 
 ----
 
