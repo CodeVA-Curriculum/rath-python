@@ -2,6 +2,7 @@
 title: 2. Remember
 description: This module introduces a third big idea in computing--storage. Use variables to store data that your program can use later.
 previous: module-1
+next: module-3
 layout: module
 video: "https://www.loom.com/embed/40b8754634bf4263a38b96da71c23392"
 activities:
@@ -17,6 +18,7 @@ activities:
     import Prompt from '$lib/components/Prompt.svelte';
     import {faPepperHot} from '@fortawesome/free-solid-svg-icons';
     import boxesImg from '$lib/assets/boxes.jpg';
+    import {base} from '$app/paths';
 </script>
 
 # Backstory
@@ -217,8 +219,7 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
 In the next module, you'll learn about how to create Python programs that make **choices** based on the value of information they gather from users and store in **variables**. Click the button below to go to the next module!
 
 <div class='container has-text-right'>
-    <!-- <a href="{base}/modules/module-2" class='button is-primary' disabled>Go to Module 2</a> -->
-    <button class='button is-primary' disabled>Got to Module 3</button>
+    <a href="{base}/modules/module-3" class='button is-primary'>Go to Module 3</a>
 </div>
 
 ----
