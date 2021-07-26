@@ -2,6 +2,7 @@
 title: 3. Choosing
 description: This module is where the rubber meets the road, so to speak. In an interactive narrative, the user needs to make choices that impact the direction of the story. Our programs can't support that--until today.
 previous: module-2
+next: module-4
 layout: module
 video: "https://www.loom.com/embed/18334da41d61437f93961fb5f7f4adeb"
 activities:
@@ -314,7 +315,7 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
 In the next module, you'll learn about how to organize your interactive stories into chapters or "scenes" using functions. Click the button below to go to the next module!
 
 <div class='container has-text-right'>
-    <!-- <a href="{base}/modules/module-3" class='button is-primary'>Go to Module 4</a> -->
+    <!-- <a href="{base}/modules/module-4" class='button is-primary'>Go to Module 4</a> -->
     <button class='button is-primary' disabled>Got to Module 4</button>
 </div>
 
