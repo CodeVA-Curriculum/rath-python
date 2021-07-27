@@ -19,6 +19,7 @@ activities:
     import {base} from '$app/paths';
     import Steps from '$lib/components/Steps.svelte';
     import Markdown from '$lib/components/Steps.svelte';
+    import flowchart from '$lib/assets/JackandBeanstalk.png';
 </script>
 
 # Backstory
@@ -217,10 +218,12 @@ So how could functions help with organizing interactive narratives? There are a 
 * A choice, where the reader types in a command to interact with the story
 * Two or more paths that lead to other scenes
 
-You can think about an interactive narrative not as a book with different endings that you read front-to-back, but as a network of "scenes" connected together. For example, here's a network of scenes represented by a flowchart for the story [insert story name]():
+You can think about an interactive narrative not as a book with different endings that you read front-to-back, but as a network of "scenes" connected together. For example, here's a network of scenes represented by a flowchart for the story of *Jack and the Beanstalk*:
 
 <!-- TODO: add flowchart -->
-[flowchart]
+<div class='container has-text-centered m-5'>
+    <img alt="A flowchart representing the plot of Jack and the Beanstalk, with additional paths included speculating as to how the story might go if Jack had made different decisions" src={flowchart} style="max-width: 781px;">
+</div>
 
 To create this story using Python, you could make each "scene" its own function and connect them together through the reader's choices. Here's an example:
 
@@ -236,7 +239,6 @@ Each "scene" function has a couple of different parts:
 4. An `if` statement, with a section for each path out of the scene
 
 </span>
-<!-- TODO: Write code -->
 <span slot="code">
 
 ```python
@@ -313,6 +315,7 @@ def scene1():
         scene3()
     else:
         print("That's not an option")
+        scene1()
 ```
 </span>
 </Steps>
@@ -321,6 +324,10 @@ def scene1():
 <span slot='text'>
 
 Because `scene1()` leads to all the other scenes, we don't need to include any other function calls. The `scene1()` call after all the function definitions starts sort of a chain reaction, where the process inside each function definition contains the calls to all subsequent scenes in the story.
+
+While it's not stricly necessary, it's a good idea to organize your code with the **functions** at the *top*, along with any variables you might need, with the "main" portion of your program containing the the function **calls** *below* them.
+
+When you use a lot of functions like this, your "main program" might be pretty short (even one line, like in the example)! That's okay.
 </span>
 <span slot='code'>
 
@@ -344,10 +351,9 @@ scene1() # activate scene 1
 </span>
 </Steps>
 
-To expand the story, all you have to do is add `if` statements to `scene2()` and `scene3()`, along with more scenes to connect to. I've expanded the story I started above into a more-or-less playable interactive narrative. Play with the [Repl.it]() embedded below to get a sense of what it's like to interact with a story organized into functions this way. Definitely check out the code as well to see how things are organized! If you're interested in extending this example, you can **fork** it from [this link]().
+To expand the story, all you have to do is add `if` statements to `scene2()` and `scene3()`, along with more scenes to connect to. I've expanded the story I started above into a more-or-less playable interactive narrative. Play with the [Repl.it](https://replit.com/~) embedded below to get a sense of what it's like to interact with a story organized into functions this way. Definitely check out the code as well to see how things are organized! If you're interested in extending this example, you can **fork** it from [this link](https://replit.com/@JonStapleton1/Interactive-Narrative-Example).
 
-<!-- TODO: Create Repl.it -->
-<!-- <ReplitEmbed url="#" /> -->
+<ReplitEmbed url="https://replit.com/@JonStapleton1/Interactive-Narrative-Example" />
 
 <!-- TODO: Record and link video -->
 <VideoModule title="Functions as Scenes" video="https://www.youtube.com/embed/ZTnb83NxPi4">
@@ -358,24 +364,36 @@ This video covers how to use *functions* to organize an interactive narrative ar
 
 <!-- TODO: -->
 <Callout title="Functions as Scenes Experiments">
-Lorum ipsum sit dolor amet
+Experiment with the story embedded above (you can also access it [here](https://replit.com/@JonStapleton1/Interactive-Narrative-Example)). This story only has one ending, but each scene has two options to choose from. 
+
+After playing through the "story" once or twice, try creating a flowchart like the one of *Jack and the Beanstalk* referenced at the beginning of the module representing the events of the example story you just played through. You can make the flowchart however you wish, but here are some suggestions:
+
+* Create the flowchart on a piece of paper. Draw four circles, and label them `scene1()`, `scene2()`, `scene3()`, and "End". Draw arrows between the different scenes to represent the different paths the reader might take through the story.
+* Create the flowchart using [Google Drawings](https://docs.google.com/drawings/create?usp=direct_url). Click [this link](https://docs.google.com/drawings/create?usp=direct_url), and log into your Google account if prompted. Use the shapes tool to create four shapes. Use a text box to label them `scene1()`, `scene2()`, `scene3()`, and "End". Then, use the connector tool to draw arrows between the scenes to represent the different paths the reader might take through the story.
+
 </Callout>
 
 # Functions Mini-Projects
 
 <!-- TODO: Write prompt, create starter code -->
 <Prompt title="Mild: Name" footerLink="#" spice="mild">
-Lorum ipsum sit dolor amet
+Open the [starter code]() at [this link](). The story written here has four scenes, but only uses three of them. Change the `scene1()`, `scene2()`, or `scene3()` functions so one of the first three scenes leads to the fourth scene. You can use the comments in the starter code as a guide.
+
+Click the button below to check out the [starter code](TODO:)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
 <!-- TODO: Write prompt, create starter code -->
 <Prompt title="Medium: Name" footerLink="#" spice="medium">
-Lorum ipsum sit dolor amet
+Open the [starter code]() at [this link](). The story written here has four scenes, but one of them does not contain any code! Add a description and `if` statement to the "empty" scene such that it calls two of the other three functions associated with the other three scenes in the story (`scene1()`, `scene2()`, `scene3()`). Use the other function definitions in the starter code as a model.
+
+Click the button below to check out the [starter code](TODO:)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
 <!-- TODO: Write prompt, create starter code -->
 <Prompt title="Spicy: Name" footerLink="#" spice="spicy">
-Lorum ipsum sit dolor amet
+This story contains `if` statements that connect the scenes together, but the scenes don't have any descriptions! Replace the filler text in the `print()` statements with descriptions that tell a story. Make sure the descriptions make sense together! Edit the `if` statements as needed to connect your story in a way that weaves a narrative as necessary.
+
+Click the button below to check out the [starter code](TODO:)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
 <div class='card my-5'>
