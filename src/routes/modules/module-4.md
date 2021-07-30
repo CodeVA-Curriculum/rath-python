@@ -3,8 +3,7 @@ title: 4. Organize
 description: Now that you know all about how to make interactive narratives, you might wonder how to make longer, more interesting stories. This module is all about how to organize your work with functions.
 previous: module-3
 layout: module
-# TODO: record & link video
-video: "https://www.youtube.com/embed/ZTnb83NxPi4"
+video: "https://www.loom.com/embed/c1fc5a3266d54d19aea1c3daac91f695"
 activities:
     - 💡 Basic Functions Experiments
     - 💡 Functions as Scenes Experiments
@@ -188,8 +187,7 @@ song() # and again...
 print("Thanks for listening!")
 ```
 
-<!-- TODO: Record video and link -->
-<VideoModule title="Functions Basics" video="https://www.youtube.com/embed/ZTnb83NxPi4">
+<VideoModule title="Functions Basics" video="https://www.loom.com/embed/426328321fd642f8bd9ad0ed4e43d47d">
 This video covers the basics of defining and using **functions** with Python. This technique is *really* important for creating interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
@@ -220,7 +218,6 @@ So how could functions help with organizing interactive narratives? There are a 
 
 You can think about an interactive narrative not as a book with different endings that you read front-to-back, but as a network of "scenes" connected together. For example, here's a network of scenes represented by a flowchart for the story of *Jack and the Beanstalk*:
 
-<!-- TODO: add flowchart -->
 <div class='container has-text-centered m-5'>
     <img alt="A flowchart representing the plot of Jack and the Beanstalk, with additional paths included speculating as to how the story might go if Jack had made different decisions" src={flowchart} style="max-width: 781px;">
 </div>
@@ -355,14 +352,12 @@ To expand the story, all you have to do is add `if` statements to `scene2()` and
 
 <ReplitEmbed url="https://replit.com/@JonStapleton1/Interactive-Narrative-Example" />
 
-<!-- TODO: Record and link video -->
-<VideoModule title="Functions as Scenes" video="https://www.youtube.com/embed/ZTnb83NxPi4">
+<VideoModule title="Functions as Scenes" video="https://www.loom.com/embed/45d46318b0f24ce1b60866ad5a66d8a4">
 This video covers how to use *functions* to organize an interactive narrative around *scenes*. You'll use this pattern a lot when you create your own interactive narratives. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
 </VideoModule>
 
-<!-- TODO: -->
 <Callout title="Functions as Scenes Experiments">
 Experiment with the story embedded above (you can also access it [here](https://replit.com/@JonStapleton1/Interactive-Narrative-Example)). This story only has one ending, but each scene has two options to choose from. 
 
@@ -375,25 +370,24 @@ After playing through the "story" once or twice, try creating a flowchart like t
 
 # Functions Mini-Projects
 
-<!-- TODO: Write prompt, create starter code -->
-<Prompt title="Mild: Name" footerLink="#" spice="mild">
-Open the [starter code]() at [this link](). The story written here has four scenes, but only uses three of them. Change the `scene1()`, `scene2()`, or `scene3()` functions so one of the first three scenes leads to the fourth scene. You can use the comments in the starter code as a guide.
+<Prompt title="Mild: Name" footerLink="https://replit.com/@JonStapleton1/Module-4-Mild-Starter-Code" spice="mild">
+Open the [starter code]() at [this link](). The story written here has four scenes, but the program as written only uses three of them. Change the `scene1()`, `scene2()`, or `scene3()` functions so one of the first three scenes leads to the fourth scene. You can use the comments in the starter code as a guide.
 
-Click the button below to check out the [starter code](TODO:)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+*Hint: This program is a lot longer than other ones you've used before. Check out lines 18-21 and lines 39-41 as a starting point.*
+
+Click the button below to check out the [starter code](https://replit.com/@JonStapleton1/Module-4-Mild-Starter-Code)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
-<!-- TODO: Write prompt, create starter code -->
-<Prompt title="Medium: Name" footerLink="#" spice="medium">
+<Prompt title="Medium: Name" footerLink="https://replit.com/@JonStapleton1/Module-4-Medium-Starter-Code" spice="medium">
 Open the [starter code]() at [this link](). The story written here has four scenes, but one of them does not contain any code! Add a description and `if` statement to the "empty" scene such that it calls two of the other three functions associated with the other three scenes in the story (`scene1()`, `scene2()`, `scene3()`). Use the other function definitions in the starter code as a model.
 
-Click the button below to check out the [starter code](TODO:)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+Click the button below to check out the [starter code](https://replit.com/@JonStapleton1/Module-4-Medium-Starter-Code)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
-<!-- TODO: Write prompt, create starter code -->
-<Prompt title="Spicy: Name" footerLink="#" spice="spicy">
+<Prompt title="Spicy: Name" footerLink="https://replit.com/@JonStapleton1/Module-4-Spicy-Starter-Code" spice="spicy">
 This story contains `if` statements that connect the scenes together, but the scenes don't have any descriptions! Replace the filler text in the `print()` statements with descriptions that tell a story. Make sure the descriptions make sense together! Edit the `if` statements as needed to connect your story in a way that weaves a narrative as necessary.
 
-Click the button below to check out the [starter code](TODO:)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
+Click the button below to check out the [starter code](https://replit.com/@JonStapleton1/Module-4-Spicy-Starter-Code)! Remember to **fork** the code so you can edit it under your own [Repl.it](https://replit.com/~) account.
 </Prompt>
 
 <div class='card my-5'>
