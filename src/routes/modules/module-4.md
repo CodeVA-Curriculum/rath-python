@@ -2,6 +2,7 @@
 title: 4. Organize
 description: Now that you know all about how to make interactive narratives, you might wonder how to make longer, more interesting stories. This module is all about how to organize your work with functions.
 previous: module-3
+next: module-5
 layout: module
 video: "https://www.loom.com/embed/c1fc5a3266d54d19aea1c3daac91f695"
 activities:
@@ -414,8 +415,8 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
 In the next module, you'll learn about designing interactive narratives, and will create one of your own. Click the button below to go to the next module!
 
 <div class='container has-text-right'>
-    <!-- <a href="{base}/modules/module-5" class='button is-primary'>Go to Module 4</a> -->
-    <button class='button is-primary' disabled>Got to Module 5</button>
+    <a href="{base}/modules/module-5" class='button is-primary'>Go to Module 5</a>
+    <!-- <button class='button is-primary' disabled>Got to Module 5</button> -->
 </div>
 
 ----
