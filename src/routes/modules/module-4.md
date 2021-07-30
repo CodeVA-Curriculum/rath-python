@@ -396,8 +396,7 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
         <p>If you would like some further practice with these concepts, click the button below to access free-response questions designed to help you master using "if" statements with Python.</p>
     </div>
     <div class='card-footer'>
-    <!-- TODO: Create OpenClass AI review for module 4 -->
-        <a href="#" class="card-footer-item">View Practice Questions</a>
+        <a href="https://codeva.openclass.ai/resource/assignment-6103fe9829da09a31b3582c2?code=xfr60ikyW3mFAQ" class="card-footer-item">View Practice Questions</a>
     </div>
 </div>
 
