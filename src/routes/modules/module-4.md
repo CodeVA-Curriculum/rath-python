@@ -415,7 +415,7 @@ In the next module, you'll learn about designing interactive narratives, and wil
 
 <div class='container has-text-right'>
     <!-- <a href="{base}/modules/module-5" class='button is-primary'>Go to Module 4</a> -->
-    <button class='button is-primary' disabled>Got to Module 5</button>
+    <button class='button is-primary' disabled>Go to Module 5</button>
 </div>
 
 ----
