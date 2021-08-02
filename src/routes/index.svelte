@@ -13,10 +13,10 @@
 		<img class='level-item i' alt="The Python logo, two stylized snakes intertwined to form a plus sign" width="100" src={pyLogo}>
 	</div>
 		<h1 class='title'>Designing Interactive Narratives with Python</h1>
-		<div class='buttons'>
-			<a class='button my-4 is-primary is-large' href="{base}/modules">Get Started</a>
+		<!-- <div class='buttons'> -->
+		<a class='button my-4 is-primary is-large' href="{base}/modules">Get Started</a>
 			<!-- <a class='button my-4 is-secondary is-large' href="{base}/modules">Tips & Tricks</a> -->
-		</div>
+		<!-- </div> -->
 </section>
 
 <style type='text/scss' lang='scss'>
