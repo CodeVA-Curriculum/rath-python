@@ -408,7 +408,15 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
 * How might you help students move away from linear Python programs toward programs decomposed into functions?
 * Are there other ways to engage students in decomposition outside of creating interactive narratives?
 
-----
+<div class='card my-3'>
+    <div class='card-content'>
+        <h3 class='subtitle'>Fill Out Our Survey!</h3>
+        <p class='block'>We would love for you to fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform">survey</a>. Hearing about your experiences will help us improve this tool and create better tools in the future to help people learn about computer science.</p>
+    </div>
+    <div class='card-footer'>
+        <a class='card-footer-item' href="https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform">Take the Survey</a>
+    </div>
+</div>
 
 # Next Up...
 

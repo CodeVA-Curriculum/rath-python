@@ -31,7 +31,7 @@
     import {faCopy, faCheckCircle} from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<div class='replit-embed-generator card py-3 px-5'>
+<div class='replit-embed-generator card py-3 px-5 my-5'>
     <div class='subtitle'>Repl.it Embed Code Generator</div>
     <div class='card-body'>
         <div class='field has-addons has-addons-fullwidth'>
@@ -70,7 +70,7 @@
     .replit-embed-generator {
         max-width: fit-content;
         min-width: 440px;
-        margin: auto;
+        margin-right: auto;
     }
     .generate:hover {
         background-color: #84C45A;
