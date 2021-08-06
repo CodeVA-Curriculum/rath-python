@@ -11,14 +11,20 @@
             <div class='column'>
                 <h3 class='card-title'>{title}</h3>
                 <Markdown>
+                    {#if $$slots.text }
                     <slot name='text' />
+                    {:else}
+                    <slot />
+                    {/if}
                 </Markdown>
             </div>
+            {#if $$slots.code }
             <div class='column'>
                 <Markdown>
                     <slot name='code' />
                 </Markdown>
             </div>
+            {/if}
         </div>
         
     </div>

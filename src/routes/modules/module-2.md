@@ -212,7 +212,15 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
 * Which is more difficult--learning the **syntax** for variables, or learning the *idea* or concept of what a variable does and/or represents?
 * Can you think of ways to adapt one or more of the above prompts to a class that you teach?
 
-----
+<div class='card my-3'>
+    <div class='card-content'>
+        <h3 class='subtitle'>Fill Out Our Survey!</h3>
+        <p class='block'>We would love for you to fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform">survey</a>. Hearing about your experiences will help us improve this tool and create better tools in the future to help people learn about computer science.</p>
+    </div>
+    <div class='card-footer'>
+        <a class='card-footer-item' href="https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform">Take the Survey</a>
+    </div>
+</div>
 
 # Next Up...
 

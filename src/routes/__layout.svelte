@@ -63,9 +63,9 @@
 					<a href="{base}/modules/module-4" class="navbar-item">
 						4. Organizing
 					</a>
-					<!-- <a href="{base}/modules/module-5" class="navbar-item">
-						5. Designing Interactive Narratives
-					</a> -->
+					<a href="{base}/modules/module-5" class="navbar-item">
+						5. Creating
+					</a>
 					</div>
 				</div>
 

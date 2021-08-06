@@ -195,7 +195,15 @@ Follow the instructions below to complete the hands-on component of this module:
 2. What additional pieces of functionality do you need to be able to code in order for you to create an **interactive narrative** like the one in [Module 0]({base}/modules/module-0)?
 3. If you were to teach `print()` and `input()` to students, how would you introduce the topic?
 
-----
+<div class='card my-3'>
+    <div class='card-content'>
+        <h3 class='subtitle'>Fill Out Our Survey!</h3>
+        <p class='block'>We would love for you to fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform">survey</a>. Hearing about your experiences will help us improve this tool and create better tools in the future to help people learn about computer science.</p>
+    </div>
+    <div class='card-footer'>
+        <a class='card-footer-item' href="https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform">Take the Survey</a>
+    </div>
+</div>
 
 # Next Up...
 
