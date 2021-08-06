@@ -5,7 +5,6 @@ previous: module-4
 layout: module
 # TODO: Replace video link
 video: "https://www.youtube.com/embed/FaiOCrMcqLk"
-# TODO: Figure out what to put for activities
 activities:
     - 💡 Interactive Narrative Project
 ---
@@ -58,9 +57,9 @@ The next step is to map out your scenes. Use a flowchart like the one pictured h
 </Steps>
 
 <Steps title="3. Create Function Definitions">
-Now that you have all of your scenes picked out, it's time to start coding! You can use the [starter code linked here]() if you want to start with a working example to modify, or you can make a [Repl.it]() project from scratch. Either way, start by creating empty function definitions for each scene in your story as shown here.
+Now that you have all of your scenes picked out, it's time to start coding! You can use the [starter code linked here](https://replit.com/@JonStapleton1/Interactive-Narrative-Starter-Code) if you want to start with a working example to modify, or you can make a [Repl.it](https://replit.com/~) project from scratch. Either way, start by creating empty function definitions for each scene in your story as shown here.
 
-<a class='button is-dark is-fullwidth mt-3' href="TODO: make starter code">View Starter Code</a>
+<a class='button is-dark is-fullwidth mt-3' href="https://replit.com/@JonStapleton1/Interactive-Narrative-Starter-Code">View Starter Code</a>
 
 <div slot="code">
 
@@ -136,13 +135,13 @@ def intro():
 
 By connecting scenes together, you'll be able to weave a story with many possible paths, and potentially many possible endings. Use a previous project of yours as a starting point, or use the starter code below to begin your project. In either case, **fork** the code to make a new version. The video below goes into detail reviewing how to get started:
 
-<VideoModule title="Creating an Interactive Narrative" video="">
-This video covers how to get started creating the interactive narrative you designed in the section above. Use the button below to open up the [starter code](TODO: add link), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
+<VideoModule title="Creating an Interactive Narrative" video="TODO: add video">
+This video covers how to get started creating the interactive narrative you designed in the section above. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
-<a href="TODO: add link" class='button is-fullwidth my-5'>Starter Code</a>
+<a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
 </VideoModule>
 
-<Prompt title="Interactive Narrative Project" footerLink="TODO: Create link">
+<Prompt title="Interactive Narrative Project" footerLink="https://replit.com/@JonStapleton1/Interactive-Narrative-Starter-Code">
 Create an interactive narrative that tells a story. Here are some prompts to get you started, in case you're not sure what to write your story about:
 
 * Tell a story about a particular historical event, where the reader can explore the different perspectives of the people involved
@@ -155,11 +154,11 @@ Follow the steps detailed above to get started. Here is a summary of the steps:
 2. Create a Python program where each scene is represented by a function
 3. Add code to your function definitions one at a time, testing as you go
 
-When you've completed your code, submit it to us using the [form linked here](TODO: add form link). Then, please complete the [survey](https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform) so we can learn about your experience with these modules.
+When you've completed your code, submit it to us using the [form linked here](https://docs.google.com/forms/d/e/1FAIpQLSf31h23VC2BEVTddqbpIc_ob32gBm9qkXlsYAS-xPbIyWuWPA/viewform?usp=sf_link). Then, please complete the [survey](https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform) so we can learn about your experience with these modules.
 
 <div class='columns'>
 <div class='column'>
-<a href="TODO: add form link" class='button is-primary is-fullwidth'>Submit Your Project Here</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf31h23VC2BEVTddqbpIc_ob32gBm9qkXlsYAS-xPbIyWuWPA/viewform?usp=sf_link" class='button is-primary is-fullwidth'>Submit Your Project Here</a>
 </div>
 <div class='column'>
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTbspGwm1jX7BfuzwLa9H-h28VRP2sylI8qOdDQfmxu7ivyQ/viewform" class='button is-warning is-fullwidth'>Take the Survey</a>
@@ -177,8 +176,6 @@ If you'd like to share your interactive narrative with someone else, you have a 
 <ReplitEmbedGenerator />
 
 ----
-
-
 
 # Supplemental Material
 
@@ -431,7 +428,7 @@ If you want to stick with interactive narratives (with or without Python), check
 
 If you liked the idea of interactive narratives, but are looking for different tools than the ones we covered in these modules, check out the resources and tools linked below:
 
-* **[Twine]():** A visual coding language specifically designed for creating interactive narratives. It's a pretty robust tool; the "programming" is done via creating flowcharts (much like the ones we used to design our interactive narratives). It runs in a web browser, so anyone with an internet connection can get started right away. [Twine]() includes lots of tutorials on their site; I think it's a pretty accessible tool. [Twine]() also makes it easy to share and publish your story once you're done.
-* **[Adventure Lib]():** If you liked Python but want to level-up your skills, [Adventure Lib]() is a Python **library** designed to help people create interactive narratives. A **library** is a set of functions and patterns for people to use; basically, [Adventure Lib]() gives you a powerful structure to create stories within. Unlike [Twine](), it isn't a full tool or website; you can make programs that use [Adventure Lib]() on Repl.it if you'd like (check out the [example]() linked here). They have a great [tutorial]() that goes over the basics; check it out if you're interested!
+* **[Twine](https://twinery.org/):** A visual coding language specifically designed for creating interactive narratives. It's a pretty robust tool; the "programming" is done via creating flowcharts (much like the ones we used to design our interactive narratives). It runs in a web browser, so anyone with an internet connection can get started right away. [Twine](https://twinery.org/) includes lots of tutorials on their site; I think it's a pretty accessible tool. [Twine](https://twinery.org/) also makes it easy to share and publish your story once you're done.
+* **[Adventure Lib](https://adventurelib.readthedocs.io/en/stable/):** If you liked Python but want to level-up your skills, [Adventure Lib](https://adventurelib.readthedocs.io/en/stable/) is a Python **library** designed to help people create interactive narratives. A **library** is a set of functions and patterns for people to use; basically, [Adventure Lib](https://adventurelib.readthedocs.io/en/stable/) gives you a powerful structure to create stories within. Unlike [Twine](https://twinery.org/), it isn't a full tool or website; you can make programs that use [Adventure Lib](https://adventurelib.readthedocs.io/en/stable/) on Repl.it if you'd like (check out the [example](https://replit.com/@JonStapleton1/AdventureLib-Starter) linked here). They have a great [tutorial](https://adventurelib.readthedocs.io/en/stable/intro.html) that goes over the basics; check it out if you're interested!
 
 ----
