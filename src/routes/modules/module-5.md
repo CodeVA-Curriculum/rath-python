@@ -3,8 +3,7 @@ title: 5. Create
 description: Finally, you have enough Python background to create your interactive narratives! This module covers some basic ideas, patterns, and strategies for designing and creating interactive narratives, along with tips for scaffolding student engagement with interactive narratives.
 previous: module-4
 layout: module
-# TODO: Replace video link
-video: "https://www.youtube.com/embed/FaiOCrMcqLk"
+video: "https://www.loom.com/embed/a92a344862394ed0b277d494943ae4c9"
 activities:
     - 💡 Interactive Narrative Project
 ---
@@ -135,7 +134,7 @@ def intro():
 
 By connecting scenes together, you'll be able to weave a story with many possible paths, and potentially many possible endings. Use a previous project of yours as a starting point, or use the starter code below to begin your project. In either case, **fork** the code to make a new version. The video below goes into detail reviewing how to get started:
 
-<VideoModule title="Creating an Interactive Narrative" video="TODO: add video">
+<VideoModule title="Creating an Interactive Narrative" video="https://www.loom.com/embed/144251a76a164daa9acf945973f2c474">
 This video covers how to get started creating the interactive narrative you designed in the section above. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
@@ -182,6 +181,17 @@ If you'd like to share your interactive narrative with someone else, you have a 
 This module is all about putting your new Python skills to work. You've learned how to use `input()` and `print()`, how to make variables that store information, how to use `if` statements to make interactive programs, and how to use functions to organize the sections of your code toward creating an interactive narrative. You'll draw on all of these skills to build your own interactive narrative at the end of this module.
 
 This module does not contain any new concepts that you'll need to draw on to complete your project; you have all the necessary tools already. Before we jump into creating your story, however, it's a good idea to go over some **axioms** for project-building that you may not already know about:
+
+<VideoModule title="Axioms for Coding Projects" video="https://www.loom.com/embed/f0496f76e0834e5e912003dfa70157e5">
+This video covers the below section of the module--axioms for coding projects. There are a lot of strategies that might be useful for beginners trying to make large projects for the first time, but these three ideas are the most important:
+
+* Always start with working code
+* Add code a little at a time
+* Be resilient!
+
+</VideoModule>
+
+Below, you'll find a text-based version of the video above, covering the same material.
 
 ## 1. Always Start with Working Code
 
@@ -353,16 +363,6 @@ SyntaxError: EOL while scanning string literal
 </div>
 </CodeAndConsole>
 
-<!-- TODO: Record and add video -->
-<VideoModule title="Axioms for Coding Projects" video="https://www.youtube.com/embed/FaiOCrMcqLk">
-This video covers the above section of the module--axioms for coding projects. There are a lot of strategies that might be useful for beginners trying to make large projects for the first time, but these three ideas are the most important:
-
-* Always start with working code
-* Add code a little at a time
-* Be resilient!
-
-</VideoModule>
-
 # Tips, Tricks, & Patterns
 
 While you don't need any new concepts or patterns to create an interactive narrative, there are some ways to extend your skills and create even more interesting projects. The tutorials below are purely optional, but if you are feeling spicy feel free to click around and see if any of these advanced topics seem useful to you:
@@ -371,30 +371,31 @@ While you don't need any new concepts or patterns to create an interactive narra
 
 Right now, you are probably only using variables to store user input before checking that input in an `if` statement. Variables have many other uses in addition to this one, however. Variables can store any kind of information, and unless you `print()` the value of that variable, the user cannot see its value. They may not even know the variable exists! Using "invisible" variables like these can be useful if you want to keep track of many decisions the reader makes, and choose to run scenes based on more complex information than just their choice. For example, you could keep track of "good" or "bad" decisions across the whole story, and then give the player a "good" or "bad" ending based on the total result of their choices.
 
-<!-- TODO: Record video and add link -->
-<VideoModule title="Invisible Variables" video="https://www.youtube.com/embed/FaiOCrMcqLk">
+<VideoModule title="Invisible Variables" video="https://www.loom.com/embed/89b1ed6cda994895b91f87d072888f38">
 This video covers some alternative uses for variables in an interactive narrative, as well as how to use one persistent variable across multiple functions. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
 </VideoModule>
 
+----
+
 ## Organizing Scenes
 
 If you are creating a particularly long story, you may find it overwhelming to scroll through your *very* long program as you add more scenes. While it is absolutely possible to keep your entire program in one file, it is probably a good idea to organize your scenes into different files once you reach a certain level of complexity. Organizing your functions into different files may help you reduce your cognitive load while adding to your project, and also helps you find old scenes that you'd like to edit more quickly.
 
-<!-- TODO: Record video and add link -->
-<VideoModule title="Organizing Scenes" video="https://www.youtube.com/embed/FaiOCrMcqLk">
+<VideoModule title="Organizing Scenes" video="https://www.loom.com/embed/08ba3cffcf084c0195e28301b30bcd15">
 This video tutorial covers how to organize functions into different files, as well as how to import these functions across files in your project. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
 </VideoModule>
 
+----
+
 ## Inventory
 
 If you want to make a more "game"-like interactive narrative, you may find yourself wondering how to have the "player" carry items through the story. You can accomplish this sort of thing by using **invisible variables** as described in the video tutorial above, but if the player needs to store lots of items using simple variable might not cut it. Instead, you can use a special flavor of variable called a **list**. *A word to the wise--this is a pretty spicy concept (and it is totally, 100% optional).*
 
-<!-- TODO: Record video & add link -->
-<VideoModule title="Inventory" video="https://www.youtube.com/embed/FaiOCrMcqLk">
+<VideoModule title="Inventory" video="https://www.loom.com/embed/0abcad0d194f4247a4e53f312f327f1d">
 This video covers how to use a list to keep track of items collected by a player during the story. This is a pretty advanced concept for beginners. Use the button below to open up the [starter code](https://replit.com/@JonStapleton1/Blank-Python-Project), which you can use to code along with the video. Don't forget to *fork* the code before you try editing it yourself!
 
 <a href="https://replit.com/@JonStapleton1/Blank-Python-Project" class='button is-fullwidth my-5'>Starter Code</a>
