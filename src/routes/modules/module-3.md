@@ -323,8 +323,7 @@ Click the button below to check out the [starter code](https://replit.com/@JonSt
 In the next module, you'll learn about how to organize your interactive stories into chapters or "scenes" using functions. Click the button below to go to the next module!
 
 <div class='container has-text-right'>
-    <!-- <a href="{base}/modules/module-4" class='button is-primary'>Go to Module 4</a> -->
-    <button class='button is-primary' disabled>Got to Module 4</button>
+    <a href="{base}/modules/module-4" class='button is-primary'>Go to Module 4</a>
 </div>
 
 ----

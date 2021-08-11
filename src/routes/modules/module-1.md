@@ -211,7 +211,6 @@ In the next module, you'll learn about how we can create Python programs that **
 
 <div class='container has-text-right'>
     <a href="{base}/modules/module-2" class='button is-primary'>Go to Module 2</a>
-    <!-- <button class='button is-primary' disabled>Got to Module 2</button> -->
 </div>
 
 ----
