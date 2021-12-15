@@ -52,9 +52,9 @@
         }
         a {
             font-weight: bolder;
-            color: white;
+            color: $grey-dark;
             :hover {
-                color: whitesmoke;
+                color: #000;
             }
         }
     }
